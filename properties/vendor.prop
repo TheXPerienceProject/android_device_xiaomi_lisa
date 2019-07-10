@@ -116,6 +116,7 @@ vendor.display.enable_hdr10_gpu_target=1
 persist.device_config.mglru_native.lru_gen_config=core
 
 # Media
+debug.stagefright.c2inputsurface=-1
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
