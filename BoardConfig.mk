@@ -119,6 +119,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM=1 \
     LLVM_IAS=1 \
@@ -129,11 +130,9 @@ TARGET_KERNEL_CLANG_VERSION := 20
 KERNEL_CC := CC=clang
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := lisa_defconfig
-BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
-BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x237
 BOARD_KERNEL_CMDLINE += service_locator.enable=1
