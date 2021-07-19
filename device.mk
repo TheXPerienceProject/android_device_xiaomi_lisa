@@ -448,7 +448,8 @@ PRODUCT_PACKAGES += \
 
 # LMK
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.lmk.force_inkernel_lmk=true
+    ro.vendor.lmk.force_inkernel_lmk=true \
+    ro.lmk.filecache_min_kb=153600
 
 # Media
 PRODUCT_PACKAGES += \
@@ -769,7 +770,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi-service \
     hostapd \
-	libprocessgroup.vendor \
+    libprocessgroup.vendor \
     libwifi-hal-qcom \
     libwpa_client \
     WifiOverlay \
