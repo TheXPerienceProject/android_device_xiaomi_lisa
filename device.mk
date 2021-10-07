@@ -174,6 +174,7 @@ PRODUCT_PACKAGES_DEBUG += \
 $(call inherit-product-if-exists, device/xiaomi/lisa-miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
