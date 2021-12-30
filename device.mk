@@ -185,6 +185,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    XPerienceLisaFrameworks \
     NoCutoutOverlay \
     LisaFrameworks \
     LisaSettings \
