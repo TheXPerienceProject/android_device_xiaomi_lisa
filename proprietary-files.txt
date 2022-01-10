@@ -1388,7 +1388,6 @@ vendor/etc/thermal-8k.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
 vendor/etc/thermal-class0.conf
-vendor/etc/thermald-devices.conf
 vendor/etc/thermal-india-4k.conf
 vendor/etc/thermal-india-8k.conf
 vendor/etc/thermal-india-camera.conf
@@ -1408,7 +1407,9 @@ vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
+vendor/etc/thermal-videochat.conf
 vendor/etc/thermal-youtube.conf
+vendor/etc/thermald-devices.conf
 vendor/lib64/libthermalclient.so
 
 # Time
