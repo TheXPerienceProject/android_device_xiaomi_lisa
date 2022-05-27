@@ -138,6 +138,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.sf.native_mode=258 \
     ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lahaina.api30 \
     ro.vendor.display.sensortype=2 \
+    ro.vendor.whitepoint_calibration_enable=false \
     vendor.display.qdcm.mode_combine=2
 
 # DPM
