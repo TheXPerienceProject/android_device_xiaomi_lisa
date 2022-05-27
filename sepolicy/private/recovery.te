@@ -1,0 +1,4 @@
+# Set recovery to permissive to flash stuff
+recovery_only(`
+  permissive recovery;
+')

@@ -1,0 +1,12 @@
+vendor.camera.				u:object_r:vendor_camera_prop:s0
+persist.camera.				u:object_r:vendor_camera_prop:s0
+ro.boot.camera.				u:object_r:vendor_camera_prop:s0
+
+# FPC
+persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0
+ro.hardware.fp.            u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
+vendor.sys.fp              u:object_r:vendor_fp_prop:s0
+
+# Thermal
+vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
