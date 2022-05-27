@@ -186,9 +186,9 @@ PRODUCT_PACKAGES += \
     LisaSystemUI \
     LisaWifiOverlay
 
-# ParanoidDoze
+# XPerienceDoze
 PRODUCT_PACKAGES += \
-    ParanoidDoze
+    XPerienceDoze
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
