@@ -1,5 +1,5 @@
 <compatibility-matrix version="1.0" type="framework">
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>android.hardware.media.c2</name>
         <version>1.0</version>
         <interface>
@@ -7,7 +7,7 @@
             <instance>dolby</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>com.fingerprints.extension</name>
         <version>3.0</version>
         <interface>
@@ -19,7 +19,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.campostproc</name>
         <version>1.0</version>
         <interface>
@@ -27,7 +27,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fingerprintextension</name>
         <version>1.0</version>
         <interface>
@@ -35,7 +35,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fx.tunnel</name>
         <version>1.0</version>
         <interface>
@@ -43,7 +43,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.mlipay</name>
         <version>1.1</version>
         <interface>

@@ -14,10 +14,17 @@ $(call inherit-product, device/xiaomi/lisa/device.mk)
 # Inherit some common PixelOS stuff
 $(call inherit-product, vendor/xperience/config/common.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := lisa
-PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := xperience_lisa
-PRODUCT_MODEL := Xiaomi 11 Lite NE
+PRODUCT_DEVICE := lisa
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Mi 11 Lite 5G NE
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys" \
+    PRODUCT_NAME=lisa_global \
+    PRODUCT_MODEL=2109119DG
+
+BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
