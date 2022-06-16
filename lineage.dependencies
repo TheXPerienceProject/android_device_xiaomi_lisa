@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "Pixelexperience/vendor_qcom_opensource_healthd-ext",
+    "target_path": "vendor/qcom/opensource/healthd-ext",
+	"remote": "github"
+  }
+]
