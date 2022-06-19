@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_lisa.mk
+    $(LOCAL_DIR)/xperience_lisa.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_lisa-user \
-    lineage_lisa-userdebug \
-    lineage_lisa-eng
+    xperience_lisa-user \
+    xperience_lisa-userdebug \
+    xperience_lisa-eng
