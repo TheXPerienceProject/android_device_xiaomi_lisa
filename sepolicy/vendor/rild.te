@@ -1,0 +1,2 @@
+allow rild default_prop:file read;
+property_set(rild, vendor_default_prop)
