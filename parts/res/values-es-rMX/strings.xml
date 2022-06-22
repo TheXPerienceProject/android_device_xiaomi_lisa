@@ -56,4 +56,30 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfiles Térmicos</string>
+    <string name="thermal_summary">Ajusta los perfiles térmicos por aplicación para obtener el óptimo rendimiento</string>
+    <string name="thermal_default">Defecto</string>
+    <string name="thermal_browser">Navegación</string>
+    <string name="thermal_camera">Cámara</string>
+    <string name="thermal_dialer">Llamada</string>
+    <string name="thermal_gaming">Juego</string>
+    <string name="thermal_streaming">Streaming</string>
+
+    <!-- Clear Speaker -->
+    <string name="clear_speaker_title">Clear speaker</string>
+    <string name="clear_speaker_summary">Reproduzca un audio de 30 segundos para despejar el altavoz</string>
+    <string name="clear_speaker_description">Ejecute esta función una o dos veces si encuentra que su altavoz está ligeramente bloqueado por el polvo. Establezca el volumen multimedia al máximo.\n\nSi el altavoz está muy bloqueado, ejecute esta función de 2 a 5 veces mientras agita el dispositivo con el altavoz hacia abajo.\n\nADVERTENCIA: asegúrese de que los auriculares estén desenchufados.</string>
+
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Control tactil</string>
+    <string name="touch_game_mode_title">Habilitar el modo de juego</string>
+    <string name="touch_game_mode_summary">Active los controles de función de la pantalla táctil manual para una mejor experiencia de juego</string>
+    <string name="touch_response_title">Respuesta al tacto</string>
+    <string name="touch_response_summary">Control de respuesta táctil</string>
+    <string name="touch_sensitivity_title">Sensibilidad al tacto</string>
+    <string name="touch_sensitivity_summary">Controle la sensibilidad táctil para toques repetidos</string>
+    <string name="touch_resistant_title">Área resistente al tacto</string>
+    <string name="touch_resistant_summary">Reduzca la sensibilidad táctil cerca de los bordes para evitar activar los controles táctiles</string>
 </resources>

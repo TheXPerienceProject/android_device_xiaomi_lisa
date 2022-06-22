@@ -51,13 +51,16 @@
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
+                android:value="com.android.settings.category.ia.battery" />
             <meta-data
                 android:name="com.android.settings.summary"
                 android:resource="@string/thermal_summary" />
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_thermal_settings" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="1" />
         </activity>
 
         <activity
@@ -74,6 +77,8 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/clear_speaker_summary" />
         </activity>
 
         <service
