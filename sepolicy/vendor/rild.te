@@ -1,2 +1,4 @@
 allow rild default_prop:file read;
 set_prop(rild, vendor_default_prop)
+set_prop(rild, vendor_deviceid_prop)
+set_prop(rild, vendor_sno_prop)
