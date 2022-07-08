@@ -121,6 +121,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LLVM_IAS=1 \
     TARGET_PRODUCT=$(PRODUCT_DEVICE)
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/yuki-clang
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := lisa_defconfig
 
