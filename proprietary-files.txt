@@ -728,6 +728,39 @@ vendor/etc/init/vendor.qti.diag.rc
 -vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/vendor.qti.diaghal@1.0.so
 
+# Display
+vendor/bin/feature_enabler_client
+vendor/bin/hw/vendor.qti.hardware.display.composer-service|c6b2c3424c803c9bd9fe16dd205c394e956d1439
+vendor/bin/init.qti.display_boot.sh
+vendor/etc/init/feature_enabler_client.rc
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplaydebug.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/libdisplayskuutils.so
+vendor/lib64/libdpps.so
+vendor/lib64/libdrmutils.so
+vendor/lib64/libgpu_tonemapper.so
+vendor/lib64/libhdr_tm.so
+vendor/lib64/libhistogram.so
+vendor/lib64/libqdcm-mode-parser.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libqrtrclient.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libqservice.so
+vendor/lib64/librcmask.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-colormgr-algo.so
+vendor/lib64/libsdm-diag.so
+vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libsdmutils.so
+vendor/lib64/libsnapdragoncolor-manager.so
+vendor/lib64/libsnapdragoncolor-qdcm.so
+vendor/lib64/libtinyxml2_1.so
+
 # Displayfeature
 vendor/bin/displayfeature
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -741,17 +774,23 @@ vendor/lib64/libtinyxml.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Display calibration
-vendor/bin/qdcmss
-vendor/etc/init/qdcmss.rc
+vendor/etc/mdss_dsi_k9d_36_02_0a_dsc_cmd_mi.xml
+vendor/etc/mdss_dsi_k9d_42_0d_0b_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_0d_0b_cmd_mode_dsc_dsi_panel.xml
-vendor/lib64/libmi-stc-HW-modulate.so
+
+# Display configs
+vendor/etc/display/advanced_sf_offsets.xml
+vendor/etc/display/DPU660.xml
+vendor/etc/display/DPU670.xml
+vendor/etc/display/DPU7__.xml
+vendor/etc/snapdragon_color_libs_config.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
+vendor/bin/qdcmss
+vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -759,30 +798,6 @@ vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
-
-# Display configs
-vendor/etc/display/DPU660.xml
-vendor/etc/display/DPU670.xml
-vendor/etc/display/DPU720.xml
-vendor/etc/display/DPU7__.xml
-vendor/etc/display/advanced_sf_offsets.xml
-
-# Display
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libqseed3.so
-vendor/lib64/librcmask.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libsnapdragoncolor-manager.so
-vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/libtinyxml2_1.so
 
 # Embedded Secure Element power manager
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -1388,14 +1403,19 @@ vendor/etc/sensors/config/tsl2540_0.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensors
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/etc/sensors/hals.conf
-vendor/lib64/libnotifyaudiohal.so
+-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/libnanopb.so
+vendor/lib64/libssccalapi.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
@@ -1403,14 +1423,16 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libsnsapi.so
+vendor/lib64/libsns_api.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/libultrasound.so
-vendor/lib64/sensors.elliptic@2.0.so
 vendor/lib64/sensors.mius.proximity.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
 # Snapdragon Computer Vision Engine - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/lib64/libscveCommon.so|6adf58a1b21c3ffad3018708d351b88709665527

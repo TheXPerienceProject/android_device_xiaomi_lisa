@@ -430,7 +430,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    LisaCSOTFrameworksOverlay \
+    LisaCSOTFrameworksOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -463,7 +463,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    LisaCarrierConfigOverlay
+    LisaCarrierConfigOverlay \
     libjson \
     librmnetctl
 
