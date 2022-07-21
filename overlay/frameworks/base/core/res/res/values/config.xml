@@ -679,6 +679,8 @@
         <item>258</item> <!-- vivid -->
         <item>256</item> <!-- saturated -->
         <item>257</item> <!-- original -->
+        <item>268</item> <!-- p3 -->
+        <item>267</item> <!-- srgb -->
     </integer-array>
 
     <!-- The bounding path of the cutout region of the main built-in display.
