@@ -458,7 +458,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
+    LisaCarrierConfigOverlay
     libjson \
     librmnetctl
 
