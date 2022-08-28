@@ -1,0 +1,28 @@
+//
+// Copyright (C) 2022 The XPerience Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+android_app {
+    name: "XiaomiParts",
+
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+    system_ext_specific: true,
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "SettingsLib",
+        "org.lineageos.settings.resources",
+    ],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+        enabled: false,
+    },
+
+}
