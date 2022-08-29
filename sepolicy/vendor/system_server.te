@@ -1,2 +1,5 @@
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
 allow system_server vendor_sysfs_graphics:file rw_file_perms;
+
+# msm-ext-disp/extcon/extcon0/cable.1/name
+allow system_server sysfs:file read;

@@ -1,1 +1,2 @@
 allow shell zygote:unix_stream_socket { getopt };
+allow shell vendor_display_prop:file read;
