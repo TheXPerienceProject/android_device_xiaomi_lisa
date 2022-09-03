@@ -1,1 +1,2 @@
 allow vendor_hal_citsensorservice_xiaomi_default property_socket:sock_file write;
+allow vendor_hal_citsensorservice_xiaomi_default init:unix_stream_socket connectto;
