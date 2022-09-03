@@ -209,6 +209,9 @@ vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 
+# Multi-gen LRU
+persist.device_config.mglru_native.lru_gen_config=all
+
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
