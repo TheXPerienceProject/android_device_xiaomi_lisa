@@ -128,6 +128,9 @@ persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 
+# camera smooth
+vendor.display.enable_camera_smooth=1
+
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
@@ -208,6 +211,9 @@ vendor.display.qdcm.mode_combine=2
 vendor.display.use_layer_ext=0
 vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.enable_rc_support=1
+vendor.display.enable_hdr10_gpu_target=1
 
 # Multi-gen LRU
 persist.device_config.mglru_native.lru_gen_config=all
