@@ -25,6 +25,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
+BOARD_SHIPPING_API_LEVEL := 30
+BOARD_API_LEVEL := 33
 
 # Audio
 PRODUCT_PACKAGES += \
