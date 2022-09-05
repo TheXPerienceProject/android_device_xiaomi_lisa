@@ -168,6 +168,8 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Codec2
 PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
