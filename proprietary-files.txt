@@ -1089,10 +1089,10 @@ vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 # NFC configs
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-nxp_RF.conf
+vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
 # NFC
-vendor/lib/libsn100u_fw.so
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 
 # NVRAM
 vendor/bin/nv_mac
@@ -1331,7 +1331,6 @@ vendor/lib64/android.hardware.secure_element@1.0-impl.so
 vendor/lib64/ls_nq_client.so
 vendor/lib64/jcos_nq_client.so
 vendor/lib64/se_nq_extn_client.so
-vendor/lib64/libchrome.so
 
 # Secure Execution Environment Communicator - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|f94e42bc48d59cfdd2b64377211da666197756b1

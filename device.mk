@@ -400,24 +400,16 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
-
 PRODUCT_PACKAGES += \
+    android.hardware.nfc_snxxx@1.2-service \
     com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    NQNfcNci \
+    libchrome.vendor \
+    NfcNci \
     Tag
 
 PRODUCT_PACKAGES += \
-    nfc_nci.nqx.default.hw \
     android.hardware.nfc@1.2.vendor \
     vendor.nxp.hardware.nfc@2.0-service
-
-PRODUCT_PACKAGES += \
-    jcos_nq_client \
-    ls_nq_client \
-    se_nq_extn_client
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.product.hardware.sku=nfc
