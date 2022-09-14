@@ -797,4 +797,7 @@
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">7</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">8</integer>
+
+    <!-- Fingerprint from stock ROM -->
+    <string name="config_stockFingerprint" translatable="false">Xiaomi/lisa_global/lisa:12/RKQ1.211001.001/V13.0.5.0.SKOMIXM:user/release-keys</string>
 </resources>
