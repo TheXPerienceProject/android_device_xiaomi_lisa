@@ -1,2 +1,5 @@
 allow zygote zygote:capability kill;
 get_prop(zygote, vendor_display_prop)
+
+allow zygote bluetooth_data_file:dir search;
+allow zygote bluetooth_data_file:file r_file_perms;
