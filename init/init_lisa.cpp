@@ -84,10 +84,13 @@ void vendor_load_properties()
 
     if (region == "IN") { // India
         set_device_props("2109119DI", "lisa_in", "Xiaomi 11 Lite NE");
+        property_override("bluetooth.device.default_name", "Xiaomi 11 Lite NE");
     } else if (region == "CN") { // China
         set_device_props("2107119DC", "lisa", "Mi 11 LE");
+        property_override("bluetooth.device.default_name", "Mi 11 LE");
     } else { // Global
         set_device_props("2109119DG", "lisa_global", "Xiaomi 11 Lite 5G NE");
+        property_override("bluetooth.device.default_name", "Xiaomi 11 Lite 5G NE");
     }
 
     // Set hardware revision
