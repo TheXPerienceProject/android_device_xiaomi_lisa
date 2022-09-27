@@ -3,3 +3,10 @@ get_prop(zygote, vendor_display_prop)
 
 allow zygote bluetooth_data_file:dir search;
 allow zygote bluetooth_data_file:file r_file_perms;
+# droid.bluetooth: type=1400 audit(0.0:2220): avc: denied { write } for name="property_service" dev="tmpfs" ino=4556 scontext=u:r:zygote:s0 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+allow zygote property_socket:sock_file write;
+allow zygote user_profile_data_file:file r_file_perms;
+
+binder_call(zygote, audioserver)
+binder_call(zygote, hal_bluetooth_default)
+binder_call(hal_bluetooth_default, zygote)
