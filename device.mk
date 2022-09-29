@@ -98,21 +98,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# Bluetooth
-PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    libbthost_if \
-    libbthost_if.vendor \
-    libbthost_if_sink.vendor \
-    libldacBT_bco.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio-impl \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.vendor.btstack.enable.lpa=true
@@ -137,6 +122,14 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 PRODUCT_PACKAGES += \
     Camera
+
+TARGET_BOARD_PLATFORM := lahaina
+TARGET_USES_AOSP_NFC := true
+TARGET_HAS_DOLBY_VISION := true
+TARGET_USES_CUSTOM_SF_OFFSETS := true
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
