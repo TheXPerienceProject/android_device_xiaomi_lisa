@@ -59,9 +59,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 # Audio policy
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# Bluetooth
-TARGET_USE_QTI_BT_STACK := true
-
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := lisa
 
