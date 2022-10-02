@@ -77,3 +77,6 @@
 
 # Touch
 /vendor/bin/hw/vendor\.xperience\.touch@1\.0-service\.lisa         u:object_r:hal_xperience_touch_default_exec:s0
+
+# powershare
+/vendor/bin/hw/vendor\.xperience\.powershare@1\.0-service\.lisa         u:object_r:hal_xperience_powershare_default_exec:s0

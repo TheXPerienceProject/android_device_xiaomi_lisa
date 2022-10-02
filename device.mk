@@ -458,7 +458,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
     android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.xperience.powershare@1.0-service.lisa
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
