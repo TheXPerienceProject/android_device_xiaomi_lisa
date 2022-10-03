@@ -3,5 +3,6 @@
         <name>vendor.xperience.touch</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IHighTouchPollingRate/default</fqname>
+        <fqname>@1.0::IGloveMode/default</fqname>		
     </hal>
 </manifest>
