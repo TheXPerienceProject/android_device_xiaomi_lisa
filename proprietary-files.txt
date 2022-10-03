@@ -649,6 +649,15 @@ vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
 
+# Mi Charge
+vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
+-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
+vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
+vendor/lib/vendor.xiaomi.hardware.micharge@1.0.so
+vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
+
 # Computer Vision (FastCV)
 -vendor/lib64/libfastcvopt.so
 vendor/etc/cvp/v2.0/facedetection/model1.dat

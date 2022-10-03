@@ -12,3 +12,6 @@ vendor.qti.hardware.radio.ims::IImsRadio                                      u:
 
 vendor.xiaomi.hardware.citsensorservice::ICitSensorService   u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
 vendor.xiaomi.hardware.displayfeature::IDisplayFeature       u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0
+
+# Mi charger
+vendor.xiaomi.hardware.micharge::IMiCharge   u:object_r:hal_micharge_hwservice:s0
