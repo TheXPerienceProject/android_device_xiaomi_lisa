@@ -139,7 +139,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Camera
+    Aperture
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
