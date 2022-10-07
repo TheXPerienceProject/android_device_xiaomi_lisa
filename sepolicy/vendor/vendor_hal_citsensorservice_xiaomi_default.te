@@ -1,2 +1,5 @@
 allow vendor_hal_citsensorservice_xiaomi_default property_socket:sock_file write;
 allow vendor_hal_citsensorservice_xiaomi_default init:unix_stream_socket connectto;
+
+# msg='avc: denied { set } for property=persist.vendor.stk3a6x.exist
+set_prop(vendor_hal_citsensorservice_xiaomi_default, vendor_default_prop)
