@@ -79,6 +79,18 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.audio.speaker.prot.enable=false \
+    persist.vendor.audio.vbat.enabled=false \
+    persist.vendor.audio.bcl.enabled=false \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    vendor.audio.offload.track.enable=false \
+    vendor.audio.adm.buffering.ms=6 \
+    vendor.audio.hal.output.suspend.supported=false \
+    vendor.audio.feature.dynamic_ecns.enable=false \
+    vendor.audio.feature.spkr_prot.enable=false \
+    vendor.audio.feature.power_mode.enable=false
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -456,6 +468,7 @@ TARGET_HAS_DOLBY_VISION := true
 TARGET_USES_CUSTOM_SF_OFFSETS := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    audio \
     perf
 
 # Power
