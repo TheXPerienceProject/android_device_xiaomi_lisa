@@ -430,6 +430,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# NFC Secure element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element_snxxx@1.2-service
+
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
     vendor.nxp.hardware.nfc@2.0-service
