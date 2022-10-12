@@ -117,7 +117,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.nfc</name>
-        <version>1.0</version>
+        <version>1.0-2</version>
         <interface>
             <name>INfc</name>
             <instance>default</instance>

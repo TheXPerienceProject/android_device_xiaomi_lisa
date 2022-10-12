@@ -469,6 +469,7 @@ TARGET_USES_CUSTOM_SF_OFFSETS := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     audio \
+    telephony \
     perf
 
 # Power
