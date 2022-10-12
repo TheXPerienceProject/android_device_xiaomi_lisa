@@ -118,7 +118,9 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     libbthost_if \
     libbthost_if.vendor \
-    libldacBT_bco.vendor
+    libbthost_if_sink \
+    libldacBT_bco.vendor \
+    vendor.qti.hardware.fm
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
