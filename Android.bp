@@ -1,5 +1,8 @@
 soong_namespace {
     imports: [
         "hardware/qcom-caf/bootctrl",
+        "device/xiaomi/lisa/nxp/nfc",
+        "device/xiaomi/lisa/nxp/secure_element/snxxx",
+        "device/xiaomi/lisa/nxp/secure_element/snxxx/libese-spi",
     ],
 }
