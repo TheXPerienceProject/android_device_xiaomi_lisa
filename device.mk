@@ -120,11 +120,11 @@ PRODUCT_PACKAGES += \
     libbthost_if.vendor \
     libbthost_if_sink \
     libldacBT_bco.vendor \
-    vendor.qti.hardware.fm
+    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth@1.1.vendor \
     android.hardware.bluetooth.audio-impl \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
