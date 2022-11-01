@@ -14,7 +14,7 @@ binder_call(vendor_hal_citsensorservice_xiaomi_client, vendor_hal_citsensorservi
 binder_call(vendor_hal_citsensorservice_xiaomi_server, vendor_hal_citsensorservice_xiaomi_client)
 
 allow vendor_hal_citsensorservice_xiaomi self:{ socket qipcrtr_socket } create_socket_perms;
-allowxperm vendor_hal_citsensorservice_xiaomi self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls;
+allowxperm vendor_hal_citsensorservice_xiaomi self:{ socket qipcrtr_socket } ioctl msm_sock_ipc_ioctls_xpe;
 
 allow vendor_hal_citsensorservice_xiaomi_default fwk_sensor_hwservice:hwservice_manager find;
 allow vendor_hal_citsensorservice_xiaomi_default system_server:binder call;
