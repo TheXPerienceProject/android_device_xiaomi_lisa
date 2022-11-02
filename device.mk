@@ -168,7 +168,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.expose.aux=1
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=1 \
