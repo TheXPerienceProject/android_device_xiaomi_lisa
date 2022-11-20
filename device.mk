@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
     libbthost_if.vendor \
     libbthost_if_sink \
     libldacBT_bco.vendor \
+    libldacBT_bco \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.fm@1.0.vendor
 
