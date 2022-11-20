@@ -296,6 +296,7 @@ sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
 vendor.usb.use_ffs_mtp=1
 persist.vendor.usb.config=mtp,adb
+vendor.usb.product_string=Xiaomi 11 Lite 5G NE
 
 # Wifi
 wifi.aware.interface=wifi-aware0
