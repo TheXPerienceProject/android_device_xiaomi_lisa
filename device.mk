@@ -124,7 +124,6 @@ PRODUCT_PACKAGES += \
     libbthost_if.vendor \
     libbthost_if_sink \
     libldacBT_bco.vendor \
-    libldacBT_bco \
     libldacBT_abr \
     libldacBT_abr.vendor \
     libldacBT_enc \
