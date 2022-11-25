@@ -487,7 +487,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     audio \
     telephony \
-    perf
+    perf \
+    wfd
 
 # Power
 PRODUCT_PACKAGES += \
