@@ -122,7 +122,6 @@ bluetooth.profile.opp.enabled?=true
 bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
-bluetooth.profile.sap.server.enabled?=true
 bluetooth.device.default_name=Mi 11 Lite 5G NE
 persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bluetooth.modem_nv_support=true
