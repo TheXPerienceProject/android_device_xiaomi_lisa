@@ -1010,6 +1010,7 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media (Dolby Vision)
+-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/bin/hw/dolbycodec2
 vendor/etc/dolby_vision.cfg
 vendor/etc/init/dolbycodec2.rc
