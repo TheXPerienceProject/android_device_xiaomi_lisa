@@ -788,8 +788,4 @@
 
     <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
     <string name="config_netflixSpoofModel" translatable="false">M2101K9G</string>
-
-    <!-- Props to spoof for netflix, if not empty -->
-    <bool name="config_dolbyAtmosSpoof">true</bool>
-
 </resources>
