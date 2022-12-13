@@ -500,6 +500,10 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     wfd
 
+PRODUCT_COPY_FILES += \
+    vendor/qcom/common/vendor/media-5.4/proprietary/vendor/lib/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideooptfeature.so \
+    vendor/qcom/common/vendor/media-5.4/proprietary/vendor/lib64/libvideooptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideooptfeature.so
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
