@@ -156,3 +156,11 @@ on property:vendor.post_boot.parsed=1
 on property:ro.board.platform=lahaina
     # Setup foreground cpuset for display composer.
     write /dev/cpuset/foreground/cpus 0-6
+
+
+on property:vendor.post_boot.parsed=1
+# IRQ Tuning
+# IRQ 72: msm_drm0
+# IRQ 225: kgsl_3d0_irq
+write /proc/irq/72/smp_affinity_list 2
+write /proc/irq/225/smp_affinity_list 1
