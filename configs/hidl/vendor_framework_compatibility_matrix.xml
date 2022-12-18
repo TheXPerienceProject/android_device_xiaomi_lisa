@@ -270,6 +270,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.data.connectionfactory</name>
+        <version>1</version>
+        <interface>
+            <name>IFactory</name>
+            <instance>slot0</instance>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.cacert</name>
         <version>1.0</version>
@@ -303,6 +312,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
              <instance>default</instance>
          </interface>
     </hal>
+	<hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.iop</name>
+        <version>2.0</version>
+        <interface>
+            <name>IIop</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.qdutils_disp</name>
         <version>1.0</version>
@@ -320,14 +337,32 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <instance>slot2</instance>
        </interface>
    </hal>
+   <hal format="aidl" optional="true">
+       <name>vendor.qti.hardware.radio.am</name>
+       <version>1</version>
+       <interface>
+           <name>IQcRilAudio</name>
+           <instance>slot1</instance>
+           <instance>slot2</instance>
+       </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.ims</name>
-           <version>1.0-7</version>
+           <version>1.0-8</version>
            <interface>
                <name>IImsRadio</name>
                <instance>imsradio0</instance>
                <instance>imsradio1</instance>
            </interface>
+    </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.ims</name>
+        <version>1-9</version>
+        <interface>
+            <name>IImsRadio</name>
+            <instance>imsradio0</instance>
+            <instance>imsradio1</instance>
+        </interface>
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
@@ -337,9 +372,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>deviceinfo</instance>
         </interface>
     </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
+        <version>1</version>
+        <interface>
+            <name>IDeviceInfo</name>
+            <instance>deviceinfo</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.lpa</name>
-        <version>1.0-1</version>
+        <version>1.0-3</version>
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
@@ -355,14 +398,40 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                <instance>oemhook1</instance>
            </interface>
     </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.qcrilhook</name>
+           <version>1</version>
+           <interface>
+               <name>IQtiOemHook</name>
+               <instance>oemhook0</instance>
+               <instance>oemhook1</instance>
+           </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <version>1.0</version>
-        <version>2.0-6</version>
+        <version>2.0-7</version>
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
             <instance>slot2</instance>
+        </interface>
+    </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+        <version>1-9</version>
+        <interface>
+            <name>IQtiRadioStable</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.qtiradioconfig</name>
+        <version>1-3</version>
+        <interface>
+            <name>IQtiRadioConfig</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -413,6 +482,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>1.0</version>
         <interface>
             <name>IEid</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+	<hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.tui_comm</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITuiComm</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -477,9 +554,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl" optional="true">
         <name>vendor.qti.imsrtpservice</name>
         <version>3.0</version>
+        <version>3.1</version>
         <interface>
             <name>IRTPService</name>
             <instance>imsrtpservice</instance>
+        </interface>
+    </hal>
+	<hal format="hidl" optional="true">
+        <name>vendor.qti.mstatservice</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMStatService</name>
+            <instance>mstatservice</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -511,6 +597,30 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>gnss_vendor</instance>
         </interface>
     </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.gnss</name>
+        <version>1-2</version>
+        <interface>
+            <name>ILocAidlGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <version>2.0-3</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.wifi.supplicant</name>
+        <version>1</version>
+        <interface>
+            <name>ISupplicantVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifi.hostapd</name>
         <version>1.0-3</version>
@@ -531,7 +641,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl" optional="true">
         <name>vendor.qti.data.factory</name>
         <version>1.0</version>
-        <version>2.0-3</version>
+        <version>2.0-7</version>
         <interface>
             <name>IFactory</name>
             <instance>default</instance>
@@ -604,6 +714,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+	<hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.power.powermodule</name>
+        <version>1.0</version>
+        <interface>
+            <name>IPowerModule</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
    <hal format="hidl" optional="true">
        <name>android.hardware.radio.config</name>
        <version>1.0-3</version>
@@ -622,7 +740,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </hal>
    <hal format="hidl" optional="true">
        <name>vendor.qti.hardware.data.iwlan</name>
-       <version>1.0</version>
+       <version>1.0-1</version>
        <interface>
            <name>IIWlan</name>
            <instance>slot1</instance>
@@ -649,6 +767,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    <hal format="hidl" optional="true">
        <name>android.hardware.media.c2</name>
        <version>1.0</version>
+       <version>1.2</version>
        <interface>
            <name>IComponentStore</name>
            <instance>default</instance>
@@ -679,6 +798,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>vendor.qti.hardware.display.composer</name>
         <version>2.0-1</version>
         <version>3.0</version>
+	    <version>3.1</version>
         <interface>
             <name>IQtiComposer</name>
             <instance>default</instance>
@@ -793,6 +913,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>camerapostprocservice</instance>
         </interface>
     </hal>
+	<!-- Camera AON service -->
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.camera.aon</name>
+        <transport>hwbinder</transport>
+        <version>1.0-3</version>
+        <interface>
+            <name>IAONService</name>
+            <instance>aoncameraservice</instance>
+        </interface>
+    </hal>
     <!-- eMBMS HAL service -->
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.embmssl</name>
@@ -802,9 +932,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>embmsslServer0</instance>
         </interface>
     </hal>
+	<hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.qccvndhal</name>
+        <version>1.0</version>
+        <interface>
+            <name>IQccvndhal</name>
+            <instance>qccvndhal</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.ims.factory</name>
         <version>1.0-1</version>
+        <version>2.0-2</version>
         <interface>
             <name>IImsFactory</name>
             <instance>default</instance>
@@ -813,6 +952,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl" optional="true">
         <name>vendor.qti.spu</name>
         <version>1.0-1</version>
+        <version>2.0</version>
         <interface>
             <name>ISPUManager</name>
             <instance>default</instance>
@@ -838,6 +978,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>MwqemAdapter</instance>
         </interface>
     </hal>
+	<!-- DpmService HAL service -->
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.dpmservice</name>
+        <transport>hwbinder</transport>
+        <version>1.0-1</version>
+        <interface>
+            <name>IDpmService</name>
+            <instance>DpmService</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
        <name>vendor.qti.hardware.qccsyshal</name>
        <transport>hwbinder</transport>
@@ -850,7 +1000,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl" optional="true">
        <name>vendor.qti.hardware.limits</name>
        <transport>hwbinder</transport>
-       <version>1.0</version>
+       <version>1.0-2</version>
        <interface>
            <name>ILimits</name>
            <instance>default</instance>
@@ -885,11 +1035,37 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <instance>default</instance>
        </interface>
     </hal>
-
+	<!-- Listen Sound Model Lib service -->
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.ListenSoundModel</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IListenSoundModel</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+	<hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.display.config</name>
+        <version>1-5</version>
+        <interface>
+            <name>IDisplayConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+       <name>vendor.qti.hardware.wifi.wificfr</name>
+       <transport>hwbinder</transport>
+       <version>1.0</version>
+       <interface>
+           <name>IWificfr</name>
+           <instance>wificfr</instance>
+       </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.qti.qesdhal</name>
         <transport>hwbinder</transport>
-        <version>1.0-1</version>
+        <version>1.0-3</version>
         <interface>
             <name>IQesdhal</name>
             <instance>default</instance>
@@ -942,19 +1118,95 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.iop</name>
-        <version>2.0</version>
-        <interface>
-            <name>IIop</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.qspmhal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
             <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.sxrhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISxrCrypto</name>
+            <instance>sxrhalservice</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRCoreService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRCamService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRSplitService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRModService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.qxr</name>
+        <interface>
+            <name>IQXRAudioService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.radio.atcmdfwd</name>
+        <version>1</version>
+        <interface>
+            <name>IAtCmdFwd</name>
+            <instance>AtCmdFwdAidl</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.data.txpwrservice</name>
+        <version>1-2</version>
+        <interface>
+            <name>ITxPwrService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.bttpi</name>
+        <version>1-2</version>
+        <interface>
+            <name>IBtTpi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>android.se.omapi</name>
+        <version>1</version>
+        <interface>
+            <name>ISecureElementService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.ims.datachannelservice</name>
+        <version>1</version>
+        <interface>
+            <name>IDataChannelService</name>
             <instance>default</instance>
         </interface>
     </hal>
