@@ -603,15 +603,6 @@
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
-    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
-         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
-         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
-         and Strength as defined in Authenticators.java -->
-    <string-array name="config_biometric_sensors" translatable="false" >
-        <!-- ID0:Fingerprint:Strong -->
-        <item>0:2:15</item>
-    </string-array>
-
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/framework.jar"</item>
@@ -765,11 +756,6 @@
          Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
          meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
-
-    <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
-         manually by the user. Off by default, since the expected haptic feedback may not be
-         available on some devices. -->
-    <bool name="config_enableHapticTextHandle">true</bool>
 
     <!-- Exempt ImsService from privacy (location) indicators -->
     <string name="config_systemTelephonyPackage" translatable="false">com.qualcomm.qti.cne</string>
