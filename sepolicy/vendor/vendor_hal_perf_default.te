@@ -1,0 +1,3 @@
+allow vendor_hal_perf_default surfaceflinger:dir search;
+
+
