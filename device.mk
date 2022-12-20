@@ -481,7 +481,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    LisaCSOTFrameworksOverlay
+    LisaCSOTFrameworksOverlay \
+    LisaFrameworksOverlay \
+    LisaSystemUIOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
