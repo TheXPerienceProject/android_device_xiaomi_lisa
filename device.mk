@@ -54,9 +54,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
-    $(LOCAL_PATH)/configs/audio/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
-    $(LOCAL_PATH)/configs/audio/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
+    $(LOCAL_PATH)/configs/audio/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/audio_effects.xml \
@@ -128,36 +126,34 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    libbthost_if \
-    libbthost_if.vendor \
-    libbthost_if_sink \
-    libldacBT_bco.vendor \
-    libldacBT_abr \
-    libldacBT_abr.vendor \
-    libldacBT_enc \
-    libldacBT_enc.vendor \
-    vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.fm@1.0.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.1.vendor \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
     android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service
+    android.hardware.bluetooth.a2dp@1.0-service \
+    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.fm@1.0.vendor
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.bt.a2dp.aac_whitelist=false \
     persist.vendor.btstack.enable.lpa=true
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
+    persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
+    persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true \
+    persist.vendor.qcom.bluetooth.enable.swb=true \
+    persist.vendor.qcom.bluetooth.enable.swbpm=true \
+    persist.vendor.qcom.bluetooth.scram.enabled=false \
+    persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -500,6 +496,7 @@ TARGET_USES_CUSTOM_SF_OFFSETS := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     audio \
+    bt \
     telephony \
     perf \
     wfd
@@ -555,8 +552,7 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    packages/modules/Bluetooth/android/app
+    $(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \

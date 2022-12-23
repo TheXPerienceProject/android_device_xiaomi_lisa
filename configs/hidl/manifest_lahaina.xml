@@ -478,6 +478,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_audio</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -495,7 +504,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-
     <!-- fm -->
     <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
@@ -558,7 +566,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>legacy/0</instance>
         </interface>
     </hal>
-
     <!-- BluetoothSar service-->
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
