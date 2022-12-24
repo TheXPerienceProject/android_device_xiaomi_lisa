@@ -77,7 +77,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/dolby/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
     $(LOCAL_PATH)/configs/audio/dolby/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml
 
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_ODM_PROPERTIES += \
+    aaudio.mmap_policy=1 \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.vbat.enabled=false \
     persist.vendor.audio.bcl.enabled=false \
@@ -88,6 +89,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
     vendor.audio.feature.dynamic_ecns.enable=false \
     vendor.audio.feature.spkr_prot.enable=false \
     vendor.audio.feature.power_mode.enable=false
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.config.media_vol_default=8 \
+    ro.config.vc_call_vol_default=9 \
+    ro.config.vc_call_vol_steps=11
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -122,7 +128,6 @@ PRODUCT_PACKAGES += \
     libldacBT_enc \
     libldacBT_enc.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
-    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth@1.1.vendor \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -445,7 +450,8 @@ PRODUCT_PACKAGES += \
 
 # NFC Secure element
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element_snxxx@1.2-service
+    android.hardware.secure_element_snxxx@1.2-service \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2.vendor \
