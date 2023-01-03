@@ -63,3 +63,19 @@ genfscon sysfs /devices/platform/soc/soc:qcom,msm-ext-disp/extcon u:object_r:sys
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon  u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,usb-pdphy@1700/extcon  u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/extcon       u:object_r:sysfs_extcon:s0
+
+# wakeup nodes
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/event_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/max_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/wakeup_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/total_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/expire_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/active_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/last_change_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/waiting_for_supplier u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/prevent_suspend_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/name u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup/wakeup[0-60]/active_time_ms u:object_r:sysfs_wakeup:s0
+
+# power supply
+genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/extcon/extcon3/cable.0/name u:object_r:sysfs_extcon:s0
