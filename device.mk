@@ -178,7 +178,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     libcamera2ndk_vendor \
-    libgui_vendor
+    libgui_vendor \
+    libion.vendor \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
