@@ -219,7 +219,8 @@ PRODUCT_COPY_FILES += \
 
 # Display / Graphics
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/display_id_4630946480857061762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061762.xml
+    $(LOCAL_PATH)/configs/display/display_id_4630946480857061762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061762.xml \
+    $(LOCAL_PATH)/configs/display/display_id_4630946622257352578.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946622257352578.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -255,8 +256,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     $(LOCAL_PATH)/configs/display_id_4630946480857061762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061762.xml
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.force_hwc_brightness=1
+#PRODUCT_PRODUCT_PROPERTIES += \
+#    ro.sf.force_hwc_brightness=1
 
 # DRM
 PRODUCT_PACKAGES += \
