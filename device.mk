@@ -246,7 +246,8 @@ PRODUCT_PACKAGES += \
     memtrack.default
 
 PRODUCT_PACKAGES += \
-    disable_configstore
+    disable_configstore \
+    lights.lisa
 
 PRODUCT_PACKAGES += \
     android.hardware.common-V1-ndk_platform.vendor \
