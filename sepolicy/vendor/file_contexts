@@ -96,5 +96,3 @@
 
 # perf  E ANDR-PERF-TARGET: Initialization of GPU Bus available freq failed,
 /sys/class/devfreq/soc:qcom,gpubw/available_frequencies u:object_r:vendor_sysfs_devfreq:s0
-
-
