@@ -173,8 +173,7 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
-PRODUCT_PACKAGES += \
-    Aperture
+$(call inherit-product-if-exists, device/xiaomi/lisa-miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -185,6 +184,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor
 
 PRODUCT_SYSTEM_PROPERTIES += \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
 
 PRODUCT_VENDOR_PROPERTIES += \
