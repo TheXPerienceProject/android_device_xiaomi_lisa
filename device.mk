@@ -123,24 +123,13 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbthost_if \
-    libbthost_if.vendor \
-    libbthost_if_sink \
-    libldacBT_bco.vendor \
-    libldacBT_abr \
-    libldacBT_abr.vendor \
-    libldacBT_enc \
-    libldacBT_enc.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.1.vendor \
+    com.dsi.ant@1.0.vendor \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
-    android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.fm@1.0.vendor
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
@@ -246,8 +235,7 @@ PRODUCT_PACKAGES += \
     memtrack.default
 
 PRODUCT_PACKAGES += \
-    disable_configstore \
-    lights.lisa
+    disable_configstore
 
 PRODUCT_PACKAGES += \
     android.hardware.common-V1-ndk_platform.vendor \
