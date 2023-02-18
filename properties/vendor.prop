@@ -42,6 +42,7 @@ persist.vendor.dpmhalservice.enable=1
 
 # Fingerprint
 ro.hardware.fingerprint=fpc
+persist.vendor.sys.fp.vendor=fpc
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
