@@ -217,6 +217,7 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.allocator@3.0 \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
