@@ -174,7 +174,6 @@ vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/libsoc_helper.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
@@ -1133,6 +1132,10 @@ vendor/etc/public.libraries.txt
 # QCV
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
+vendor/lib/libsoc_helper.so
+vendor/lib/libsoc_helper_jni.so
+vendor/lib64/libsoc_helper.so
+vendor/lib64/libsoc_helper_jni.so
 
 # QMI
 vendor/bin/irsc_util
