@@ -410,6 +410,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # LMK
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.lmk.force_inkernel_lmk=true
