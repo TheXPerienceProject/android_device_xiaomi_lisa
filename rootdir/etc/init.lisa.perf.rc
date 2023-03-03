@@ -164,3 +164,35 @@ on property:vendor.post_boot.parsed=1
 # IRQ 225: kgsl_3d0_irq
 write /proc/irq/72/smp_affinity_list 2
 write /proc/irq/225/smp_affinity_list 1
+
+#XPerience Yuki kernel configuration
+# 
+on property:vendor.post_boot.parsed=1
+	# Limit max perf event processing time to this much CPU usage
+    write /proc/sys/kernel/perf_cpu_time_max_percent 15
+
+	# Execute child process before parent after fork
+	write /proc/sys/kernel/sched_child_runs_first 1
+
+	# Always allow sched boosting on top-app tasks
+	write /proc/sys/kernel/sched_min_task_util_for_colocation 0
+
+	# Start blocking writeback later
+	write /proc/sys/vm/dirty_ratio 30
+
+	# Enable Explicit Congestion Control
+	write /proc/sys/net/ipv4/tcp_ecn 1
+
+	# Enable fast socket open for receiver and sender
+	write /proc/sys/net/ipv4/tcp_fastopen 3
+
+	# Prefer to schedule top-app tasks on idle CPUs
+	write /dev/stune/top-app/schedtune.prefer_idle 1
+
+	# Mark top-app as boosted, find high-performing CPUs
+	write /dev/stune/top-app/schedtune.boost 1
+
+    # Workqueue Affinity to reduce jitter 
+	# Set to cpu 0-3 and more conservative
+	# https://bitsum.com/tools/cpu-affinity-calculator/
+    write /sys/devices/virtual/workqueue/cpumask 3
