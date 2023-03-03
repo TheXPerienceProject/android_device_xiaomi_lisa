@@ -821,4 +821,12 @@
     <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
     <string name="config_netflixSpoofModel" translatable="false">M2101K9G</string>
 
+    <!-- Smart charging -> now Battery protection-->
+    <bool name="config_batteryProtectionAvailable">true</bool>
+    <integer name="config_batteryProtectionBatteryLevel">80</integer>
+    <integer name="config_batteryProtectionBatteryResumeLevel">60</integer>
+    <string name="config_batteryProtectionSysfsNode" translatable="false">/sys/class/qcom-battery/input_suspend</string>
+    <string name="config_batteryProtectionSuspendValue" translatable="false">1</string>
+    <string name="config_batteryProtectionResumeValue" translatable="false">0</string>
+
 </resources>
