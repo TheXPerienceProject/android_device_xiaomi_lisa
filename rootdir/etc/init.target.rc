@@ -131,6 +131,9 @@ on post-fs
     # Apply sensors fix
     start init-sensors_fix-sh
 
+    # Bind mount brightness node
+    mount none /sys/class/backlight/panel0-backlight/brightness /sys/class/mi_display/disp-DSI-0/brightness_clone bind
+
 on late-fs
     wait_for_prop hwservicemanager.ready true
     mount_all --late
