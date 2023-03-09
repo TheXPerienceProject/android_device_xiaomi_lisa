@@ -80,6 +80,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/dolby/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml
 
 PRODUCT_ODM_PROPERTIES += \
+    vendor.audio.dolby.ds2.enabled=true \
     aaudio.mmap_policy=1 \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.vbat.enabled=false \
@@ -501,6 +502,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 TARGET_BOARD_PLATFORM := lahaina
 TARGET_USES_AOSP_NFC := true
 TARGET_HAS_DOLBY_VISION := true
+TARGET_USES_DOLBY_DS2 := true
 TARGET_USES_CUSTOM_SF_OFFSETS := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
