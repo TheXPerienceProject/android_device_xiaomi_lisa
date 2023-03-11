@@ -184,9 +184,6 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 
-# Compression
-PRODUCT_FS_COMPRESSION := 1
-
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
 
