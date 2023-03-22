@@ -829,4 +829,7 @@
     <string name="config_batteryProtectionSuspendValue" translatable="false">1</string>
     <string name="config_batteryProtectionResumeValue" translatable="false">0</string>
 
+    <!-- Whether device has Xiaomi Mi Turbo charging support -->
+    <bool name="config_hasMiTurboCharger">true</bool>
+
 </resources>
