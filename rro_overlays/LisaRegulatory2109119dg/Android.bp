@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "LisaRegulatory2109119dg",
+    product_specific: true,
+}

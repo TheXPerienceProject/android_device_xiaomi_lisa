@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-License-Identifier: Apache-2.0 
+    (C) The XPerience Project 2023
+-->
+<resources>
+    <bool name="config_show_softap_wifi6">true</bool>
+</resources>
