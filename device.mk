@@ -490,7 +490,10 @@ PRODUCT_PACKAGES += \
     LisaFrameworksOverlay \
     LisaSystemUIOverlay \
     LisaSettingsOverlay \
-    LisaSettingsProviderOverlay
+    LisaSettingsProviderOverlay \
+    LisaRegulatory2109119dc \
+    LisaRegulatory2109119dg \
+    LisaRegulatory2109119di
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

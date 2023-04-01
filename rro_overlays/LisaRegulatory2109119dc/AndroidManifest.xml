@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-License-Identifier: Apache-2.0 
+    (C) The XPerience Project 2023
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.settings.overlay.2109119dc">
+    <application android:hasCode="false" />
+    <overlay android:targetPackage="com.android.settings"
+             android:requiredSystemPropertyName="ro.boot.hwc"
+             android:requiredSystemPropertyValue="CN"
+             android:isStatic="true" />
+</manifest>
