@@ -12,6 +12,9 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := lisa
 
+# Display
+TARGET_SCREEN_DENSITY := 400
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/lisa_QGKI.config
 
@@ -29,6 +32,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 
 # Inherit MiuiCamera Makefile
 -include vendor/xiaomi/miuicamera-$(PRODUCT_DEVICE)/BoardConfig.mk
