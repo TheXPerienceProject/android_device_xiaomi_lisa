@@ -123,8 +123,6 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
 TARGET_KERNEL_CONFIG := lisa_defconfig
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/vendor/qcom/sdclang/compiler/
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
