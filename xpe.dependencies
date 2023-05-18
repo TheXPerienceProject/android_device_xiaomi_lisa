@@ -1,20 +1,14 @@
 [
   {
     "remote": "xpe",
-    "repository": "android_device_xiaomi_lisa-miuicamera",
-    "target_path": "device/xiaomi/lisa-miuicamera",
-    "revision": "xpe-17.0-caf"
-  },
-  {
-    "remote": "xpe",
     "repository": "android_kernel_xiaomi_lisa",
     "target_path": "kernel/xiaomi/lisa",
     "revision": "xpe-17.0-caf"
   },
   {
-    "remote": "unicorn",
-    "repository": "android_vendor_xiaomi_lisa-miuicamera",
-    "target_path": "vendor/xiaomi/lisa-miuicamera",
+    "remote": "github",
+    "repository": "TheXPerienceProject/proprietary_vendor_xiaomi_camera",
+    "target_path": "vendor/xiaomi/camera",
     "revision": "xpe-17.0-caf"
   },
   {
