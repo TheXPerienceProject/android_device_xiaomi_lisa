@@ -186,8 +186,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev \
     ro.miui.notch=1 \
     ro.product.mod_device=lisa
 
