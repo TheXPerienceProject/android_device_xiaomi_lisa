@@ -264,6 +264,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.force_hwc_brightness=1
 
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.use_latest_hwc_vsync_period=0
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
