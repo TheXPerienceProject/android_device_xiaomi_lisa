@@ -14,6 +14,7 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 
 # Dexopt
+persist.sys.dalvik.multithread=true
 pm.dexopt.first-boot=quicken
 pm.dexopt.bg-dexopt=everything
 pm.dexopt.boot=verify

@@ -204,3 +204,8 @@ on property:vendor.post_boot.parsed=1
     write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us_screen_off 2000
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us_screen_off 2000
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us_screen_off 2000
+
+   # optimize for some games
+   write /proc/sys/kernel/sched_lib_name "com.miHoYo., com.activision., UnityMain, libunity.so, libil2cpp.so, libfb.so"
+   write /proc/sys/kernel/sched_lib_mask_force 240
+
