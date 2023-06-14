@@ -47,6 +47,8 @@ genfscon sysfs /devices/platform/soc/soc:qcom,smp2p-dsps/wakeup u:object_r:sysfs
 genfscon sysfs /devices/platform/soc/soc:qcom,spcom/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys1/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,trustedvm@d0800000/subsys2/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/Listen u:object_r:sysfs_wakeup:s0
 
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/extcon/extcon2/cable.1/name u:object_r:sysfs_extcon:s0
