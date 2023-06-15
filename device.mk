@@ -498,6 +498,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     LisaCSOTFrameworksOverlay \
     LisaFrameworksOverlay \
+    LisaNfcOverlay \
     LisaSystemUIOverlay \
     LisaSettingsOverlay \
     LisaSettingsProviderOverlay \
