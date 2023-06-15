@@ -8,7 +8,18 @@
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
 # Inherit MiuiCamera Makefile
-$(call inherit-product, vendor/xiaomi/miuicamera-lisa/device.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
+# Properties
+PRODUCT_ODM_PROPERTIES += \
+    ro.com.google.lens.oem_camera_package=com.android.camera \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
+    ro.miui.notch=1 \
+    ro.product.mod_device=lisa
+
+PRODUCT_ODM_PROPERTIES += \
+    camera.disable_zsl_mode=1 \
+    ro.hardware.camera=xiaomi
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -21,7 +32,8 @@ PRODUCT_PACKAGES += \
     lisaGLSettingsProviderOverlay \
     lisaGLWifiOverlay \
     lisaINSettingsProviderOverlay \
-    lisaINWifiOverlay
+    lisaINWifiOverlay \
+    LisaNfcOverlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

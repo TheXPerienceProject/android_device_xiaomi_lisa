@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lisa.mk
+    $(LOCAL_DIR)/xperience_lisa.mk
