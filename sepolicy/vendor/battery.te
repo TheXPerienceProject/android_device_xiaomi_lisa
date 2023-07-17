@@ -19,22 +19,34 @@ r_dir_file(battery_daemons, sysfs_type)
 r_dir_file(battery_daemons, vendor_sysfs_usb_supply)
 r_dir_file(battery_daemons, vendor_sysfs_usbpd_device)
 
+allow battery_daemons {
+  mnt_vendor_file
+  persist_subsys_file
+  rootfs
+}:dir rw_dir_perms;
 
-allow battery_daemons persist_subsys_file:dir w_dir_perms;
-allow battery_daemons rootfs:dir w_dir_perms;
+allow battery_daemons {
+  sysfs
+  sysfs_leds
+  sysfs_battery_supply
+  vendor_sysfs_battery_supply
+  sysfs_usb
+  vendor_sysfs_usb_supply
+  vendor_sysfs_usbpd_device
+}:file rw_file_perms;
 
 allow battery_daemons kmsg_device:chr_file rw_file_perms;
 allow battery_daemons persist_subsys_file:file w_file_perms;
-allow battery_daemons vendor_sysfs_battery_supply:file w_file_perms;
-allow battery_daemons sysfs_usb:file w_file_perms;
-allow battery_daemons vendor_sysfs_usb_supply:file w_file_perms;
-allow battery_daemons vendor_sysfs_usbpd_device:file w_file_perms;
-
 allow battery_daemons self:global_capability_class_set sys_tty_config;
 allow battery_daemons self:global_capability_class_set sys_boot;
 
 allow battery_daemons self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 
 allow battery_daemons self:capability { chown fsetid };
+
+allow battery_daemons {
+  system_suspend_hwservice
+  hidl_manager_hwservice
+}:hwservice_manager find;
 
 wakelock_use(battery_daemons)
