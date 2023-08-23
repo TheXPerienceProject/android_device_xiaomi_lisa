@@ -3,3 +3,7 @@ set_prop(vendor_init, vendor_fp_prop)
 
 # Cgroups
 allow vendor_init cgroup:file getattr;
+
+# Perf
+allow vendor_init proc_perf:file rw_file_perms;
+allow vendor_init device:file create;
