@@ -1,6 +1,6 @@
 <compatibility-matrix version="4.0" type="framework">
     <hal format="hidl" optional="true">
-        <name>vendor.dolby_v3_6.hardware.dms360</name>
+        <name>vendor.dolby.hardware.dms</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
         <interface>
