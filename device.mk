@@ -212,6 +212,17 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
+# declare use of spatial audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.spatializer_enabled=true
+
+# optimize spatializer effect
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.spatializer.effect.util_clamp_min=300
+
+PRODUCT_PACKAGES += \
+	libspatialaudio
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts
