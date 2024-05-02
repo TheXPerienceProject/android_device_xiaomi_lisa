@@ -1461,6 +1461,14 @@ vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_rtp.bin
 vendor/firmware/osc_rtp_24K_5s.bin
+vendor/firmware/0_click_P_RTP.bin
+vendor/firmware/2_tick_P_RTP.bin
+vendor/firmware/3_thud_P_RTP.bin
+vendor/firmware/4_pop_P_RTP.bin
+vendor/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin
+vendor/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
+vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
+vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 
 # WiFi
 vendor/bin/cnss-daemon
