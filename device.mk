@@ -182,7 +182,9 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libgui_vendor \
     libion.vendor \
-    android.hardware.graphics.common-V3-ndk.vendor
+    android.hardware.graphics.common-V3-ndk.vendor \
+    libbufferhub \
+    libbufferhubqueue
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
@@ -268,7 +270,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.common-V1-ndk_platform.vendor \
-    android.hardware.graphics.common-V1-ndk_platform.vendor
+    android.hardware.graphics.common-V1-ndk_platform.vendor \
+    android.hardware.graphics.common-V4-ndk.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
