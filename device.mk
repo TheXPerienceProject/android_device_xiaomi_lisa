@@ -183,8 +183,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libion.vendor \
     android.hardware.graphics.common-V3-ndk.vendor \
-    libbufferhub \
-    libbufferhubqueue
+    libbufferhub
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
