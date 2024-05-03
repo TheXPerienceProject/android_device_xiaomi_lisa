@@ -972,7 +972,6 @@ vendor/etc/init/dolbycodec2.rc
 vendor/etc/media_codecs_system_default_yupik.xml
 vendor/etc/media_codecs_with_dolby_yupik.xml
 vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
 vendor/etc/media_profiles.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_vendor.xml
@@ -1017,8 +1016,6 @@ vendor/firmware/vpu20_1v_unsigned.mbn
 # Media
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
-vendor/etc/media_codecs_performance_yupik_v1.xml
-vendor/etc/media_codecs_yupik_v1.xml
 vendor/etc/media_profiles_yupik_v1.xml
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_lahaina/video_system_specs.json
