@@ -966,7 +966,7 @@ vendor/lib/libsmwrapper.so
 
 # Media (Dolby Vision) - from lisa V816.0.3.0.UKOMIXM
 -vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/bin/hw/dolbycodec2
+vendor/bin/hw/dolbycodec2|fc4f0a80d81129602b9054a45afc71223b90b076
 vendor/etc/dolby_vision.cfg
 vendor/etc/init/dolbycodec2.rc
 vendor/etc/media_codecs_system_default_yupik.xml
@@ -983,6 +983,8 @@ vendor/lib64/c2.dolby.store.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libDecoderProcessor.so
 vendor/lib64/libeglcore.so
+vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl@1.0.stock.so
+vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk.stock.so
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
