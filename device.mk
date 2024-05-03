@@ -468,6 +468,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
+# NDK
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-V2-ndk.vendor \
+    android.hardware.camera.device-V1-ndk.vendor \
+    android.hardware.camera.metadata-V1-ndk.vendor \
+    android.hardware.camera.provider-V1-ndk.vendor \
+    android.hardware.gnss-V2-ndk.vendor \
+    android.hardware.graphics.allocator-V1-ndk.vendor \
+    android.hardware.graphics.common-V3-ndk.vendor \
+    android.hardware.wifi.supplicant-V1-ndk.vendor \
+    vendor.qti.hardware.wifi.supplicant-V1-ndk.vendor
+
 # Network
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
