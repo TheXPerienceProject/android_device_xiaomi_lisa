@@ -1093,12 +1093,9 @@ vendor/lib64/unnhal-acc-gpu.so|1cf2ba611619b6578b0b547226aeccf5da6472c7
 vendor/lib64/unnhal-acc-htp.so|e58dc452c233cce150b0b0019f29c65ebde9f12c
 
 # OMX
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
 vendor/lib/libMpeghSwEnc.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
 vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/libOmxApeDecSw.so
@@ -1111,12 +1108,9 @@ vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
 vendor/lib64/libMpeghSwEnc.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
 vendor/lib64/libOmxAmrwbplusDec.so
 vendor/lib64/libOmxApeDec.so
 vendor/lib64/libOmxApeDecSw.so
