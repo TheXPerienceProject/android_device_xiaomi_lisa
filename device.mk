@@ -263,12 +263,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@3.0.vendor \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.allocator@3.0 \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
     vendor.display.config@1.15.vendor \
@@ -281,8 +280,7 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libtinyxml \
-    memtrack.default
+    libtinyxml
 
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -468,6 +466,13 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin.vendor \
     libstagefright_omx.vendor \
     libcodec2_soft_common.vendor \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
     libopus.vendor \
     libstagefrighthw \
     libstagefright_omx \
@@ -516,7 +521,10 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_soft_common.vendor \
     libcodec2_vndk.vendor \
-    libsfplugin_ccodec_utils.vendor
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx_plugin \
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_softomx.vendor
 
 # Mlipay
 PRODUCT_PACKAGES += \
