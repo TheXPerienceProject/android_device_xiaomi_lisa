@@ -1,0 +1,2 @@
+allow mediaserverwrapper same_process_hal_file:file read;
+
