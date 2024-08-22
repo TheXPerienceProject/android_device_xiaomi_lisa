@@ -14,3 +14,5 @@ allow vendor_hal_perf_default ctl_stop_prop:property_service { set };
 
 # msm_irqbalance
 set_prop(vendor_hal_perf_default, vendor_msm_irqbalance_prop)
+
+allow vendor_hal_perf_default sysfs:file r_file_perms;
