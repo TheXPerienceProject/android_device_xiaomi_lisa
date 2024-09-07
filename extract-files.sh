@@ -98,6 +98,9 @@ function blob_fixup() {
         vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service)
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            ;;
     esac
 }
 
