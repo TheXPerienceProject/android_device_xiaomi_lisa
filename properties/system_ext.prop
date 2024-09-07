@@ -3,6 +3,7 @@ persist.vendor.dpm.feature=11
 
 # Media
 vendor.media.target_variant=_yupik_v1
+vendor.netflix.bsp_rev=Q7325-SPY-33758-1
 
 # Telephony
 ro.telephony.sim_slots.count=2
