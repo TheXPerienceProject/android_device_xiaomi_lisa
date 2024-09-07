@@ -964,27 +964,32 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
-# Media (Dolby Vision) - from lisa V816.0.3.0.UKOMIXM
--vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/bin/hw/dolbycodec2|fc4f0a80d81129602b9054a45afc71223b90b076
+# Dolby Vision - from diting
+vendor/bin/hw/dolbycodec2
 vendor/etc/dolby_vision.cfg
 vendor/etc/init/dolbycodec2.rc
-vendor/etc/media_codecs_system_default_yupik.xml
-vendor/etc/media_codecs_with_dolby_yupik.xml
-vendor/etc/media_codecs.xml
-vendor/etc/media_profiles.xml
-vendor/etc/media_profiles_V1_0.xml
-vendor/etc/media_profiles_vendor.xml
-vendor/etc/media_profiles_lahaina.xml
+vendor/lib/c2.dolby.avc.dec.so
+vendor/lib/c2.dolby.avc.sec.dec.so
+vendor/lib/c2.dolby.client.so
+vendor/lib/c2.dolby.egl.so
+vendor/lib/c2.dolby.hevc.dec.so
+vendor/lib/c2.dolby.hevc.enc.so
+vendor/lib/c2.dolby.hevc.sec.dec.so
+vendor/lib/c2.dolby.store.so
+vendor/lib/libdolbyottcameracontrol.so
+vendor/lib/libdolbyvision.so
+vendor/lib64/c2.dolby.avc.dec.so
+vendor/lib64/c2.dolby.avc.sec.dec.so
 vendor/lib64/c2.dolby.client.so
+vendor/lib64/c2.dolby.egl.so
 vendor/lib64/c2.dolby.hevc.dec.so
+vendor/lib64/c2.dolby.hevc.enc.so
 vendor/lib64/c2.dolby.hevc.sec.dec.so
 vendor/lib64/c2.dolby.store.so
 vendor/lib64/libdolbyottcameracontrol.so
-vendor/lib64/libDecoderProcessor.so
-vendor/lib64/libeglcore.so
-vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl@1.0.stock.so
-vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk.stock.so
+vendor/lib64/libdolbyvision.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk_vendor.so
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0_vendor.so
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00

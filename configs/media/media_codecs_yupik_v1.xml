@@ -3,4 +3,5 @@
 <MediaCodecs>
     <Include href="media_codecs_system_default_yupik.xml" />
     <Include href="media_codecs_with_dolby_yupik.xml" />
+    <Include href="media_codecs_dolby_audio.xml" />
 </MediaCodecs>

@@ -46,9 +46,14 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         // Pocket
         PocketService.startService(context);
 
+        // Dolby vision
+        overrideHdrTypes(context);
+    }
+
+    private static void overrideHdrTypes(Context context) {
         // Override HDR types to enable Dolby Vision
-        final DisplayManager displayManager = context.getSystemService(DisplayManager.class);
-        displayManager.overrideHdrTypes(Display.DEFAULT_DISPLAY, new int[]{
+        final DisplayManager dm = context.getSystemService(DisplayManager.class);
+        dm.overrideHdrTypes(Display.DEFAULT_DISPLAY, new int[]{
                 HdrCapabilities.HDR_TYPE_DOLBY_VISION, HdrCapabilities.HDR_TYPE_HDR10,
                 HdrCapabilities.HDR_TYPE_HLG, HdrCapabilities.HDR_TYPE_HDR10_PLUS});
     }
