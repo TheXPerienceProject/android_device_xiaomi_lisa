@@ -462,18 +462,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx.vendor \
     libstagefright_softomx_plugin \
     libstagefright_softomx_plugin.vendor \
     libstagefright_omx.vendor \
+    libcodec2_soft_common.vendor \
+    libopus.vendor \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation \
@@ -529,9 +524,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.1.vendor \
     libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx.vendor \
-    libstagefright_omx.vendor
+    libcodec2_vndk.vendor \
+    libsfplugin_ccodec_utils.vendor
 
 # Mlipay
 PRODUCT_PACKAGES += \
