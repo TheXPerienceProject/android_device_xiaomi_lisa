@@ -450,6 +450,11 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin \
+    libstagefright_softomx_plugin.vendor \
+    libstagefright_omx.vendor \
     libstagefrighthw \
     libstagefright_omx \
     libstagefright_foundation \
@@ -477,6 +482,26 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
+
+# Misc
+PRODUCT_PACKAGES += \
+    libjson \
+    libjsoncpp \
+    libjsoncpp.vendor \
+    libjsoncpp_ndk \
+    libexif.vendor \
+    libgui_vendor \
+    libjpeg.vendor \
+    liblz4.vendor \
+    libnetutils.vendor \
+    libexpat \
+    libexpat.vendor \
+    libpng.vendor \
+    libssl.vendor \
+    libcurl.vendor \
+    libsqlite.vendor \
+    libyuv.vendor \
+    libgrpc++_unsecure.vendor
 
 # Minijail
 PRODUCT_PACKAGES += \
@@ -643,6 +668,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
+# Shims
+PRODUCT_PACKAGES += \
+    libui_shim
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -664,7 +693,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-utils-prd \
     qti_telephony_utils.xml \
     qti_telephony_utils_prd.xml \
-    telephony-ext
+    telephony-ext \
+    libsysutils.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
@@ -730,6 +760,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd@1.0.vendor \
     android.hardware.wifi-service \
     hostapd \
+	libprocessgroup.vendor \
     libwifi-hal-qcom \
     libwpa_client \
     WifiOverlay \
