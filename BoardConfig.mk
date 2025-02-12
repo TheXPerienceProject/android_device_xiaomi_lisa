@@ -99,8 +99,8 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
     $(DEVICE_PATH)/configs/hidl/dolby.xml \
     vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml \
-    vendor/xperience/interfaces/vendor_framework_compatibility_matrix.xml
-    $(COMMON_PATH)/hidl/device_framework_matrix.xml
+    vendor/xperience/interfaces/vendor_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/hidl/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/hidl/manifest_lahaina.xml \
