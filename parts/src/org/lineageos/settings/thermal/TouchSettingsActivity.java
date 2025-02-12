@@ -19,6 +19,8 @@ package org.lineageos.settings.thermal;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import androidx.fragment.app.FragmentTransaction;
+
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
 public class TouchSettingsActivity extends CollapsingToolbarBaseActivity {
@@ -30,8 +32,11 @@ public class TouchSettingsActivity extends CollapsingToolbarBaseActivity {
         super.onCreate(savedInstanceState);
         TouchSettingsFragment touchSettingsFragment = new TouchSettingsFragment();
         touchSettingsFragment.setArguments(getIntent().getExtras());
-        getSupportFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
-                touchSettingsFragment, TAG_TOUCH).commit();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        transaction.replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, touchSettingsFragment, TAG_TOUCH);
+        transaction.commit();
+
     }
 
     @Override
