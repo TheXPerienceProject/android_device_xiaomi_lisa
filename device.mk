@@ -689,7 +689,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libui_shim
+    libui_shim \
+    libui_shim.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
