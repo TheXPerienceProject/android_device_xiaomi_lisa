@@ -104,4 +104,9 @@ void vendor_load_properties()
     // SafetyNet workaround
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.oem_unlock_supported", "0");
+    property_override("ro.secure", "0");
+    property_override("ro.adb.secure", "0");
+    property_override("ro.debuggable", "1");
+    property_override("persist.service.adb.enable", "1");
+
 }
