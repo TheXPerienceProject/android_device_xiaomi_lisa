@@ -170,7 +170,8 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Camera
-#$(call inherit-product-if-exists, device/xiaomi/lisa-miuicamera/config.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 PRODUCT_PACKAGES += \
     Aperture
 
