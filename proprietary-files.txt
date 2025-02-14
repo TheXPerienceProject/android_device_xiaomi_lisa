@@ -1,13 +1,13 @@
 # Device proprietary files - from miui_LISAGlobal_OS1.0.3.0.UKOMIXM package, unless pinned
 
-# ACDB libraries
+# ACDB libraries - from V816.0.11.0.UKOMIXM
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
-# ACDB
+# ACDB - from V816.0.11.0.UKOMIXM
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
@@ -24,7 +24,7 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
 
-# ADSP Modules
+# ADSP Modules - from V816.0.11.0.UKOMIXM
 vendor/lib/rfsa/adsp/bm2n06.bin
 vendor/lib/rfsa/adsp/bm2n08.bin
 vendor/lib/rfsa/adsp/bm2n13.bin
@@ -74,7 +74,7 @@ vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
-# ADSP
+# ADSP - from V816.0.11.0.UKOMIXM
 vendor/bin/adsprpcd
 vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
@@ -89,7 +89,7 @@ vendor/lib64/libtinycompress.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio FX modules
+# Audio FX modules - from V816.0.11.0.UKOMIXM
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
@@ -100,7 +100,7 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libmisoundfx.so
 
-# Audio Hardware
+# Audio Hardware - from V816.0.11.0.UKOMIXM
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
@@ -121,35 +121,35 @@ vendor/lib64/libresampler.so
 vendor/firmware/tfa98xx.cnt
 
 # Audio Dolby - from 9R OOS 11.2.8.8
-system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
--system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
--system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/lib/libdapparamstorage.so|6c488c6bc88abe13c6fd689124475526c1cf41b8
-vendor/lib/libdeccfg.so|28b3aa2368d091b50ef7d5f3c3d44466a89172f8
-vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
-vendor/lib/libstagefright_soft_ac4dec.so|e1560136d7f16ed177e8f848fba3448014ea061c
-vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524
-vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a
-vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
-vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
-vendor/lib/soundfx/libswgamedap.so|a4d17b610b5cd873bd82c28f7361ba66a5d2c48e
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|73532d31c8fdad87b69e9cc1724dfc5b02a893e7
-vendor/lib64/libdapparamstorage.so|b820de455f13bce531331f9e134b1e56b8a651d4
-vendor/lib64/libdeccfg.so|adea652793ab688253b0b56d6c165625184eab54
-vendor/lib64/libdlbdsservice.so|f8867071a19efabef94eae4eb62424a5a88b9ef0
-vendor/lib64/libstagefright_soft_ac4dec.so|8c89d21ba388c05504f2950d8a7c1103e57214ad
-vendor/lib64/libstagefright_soft_ddpdec.so|555b5b366c35bad0c6d6e98a3d04f1105e4d9e92
-vendor/lib64/libstagefrightdolby.so|67157be87b3d8fe2c5a057044ce596ce1b68d16b
-vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
-vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
-vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
+#system/lib64/vendor.dolby.hardware.dms@2.0.so|0a1cb972160890b07baf3a3e624e9ec1273befed
+#-system_ext/priv-app/DaxUI/DaxUI.apk|89e8ceabb19458b872eed0560a627eb2ff4c4dc4
+#-system_ext/priv-app/daxService/daxService.apk|ed1de719afc7181a7e896e0eeaf14edc00761c21
+#vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|84247a3563b362e97dacaa79d4845c1292a92f13
+#vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+#vendor/lib/libdapparamstorage.so|6c488c6bc88abe13c6fd689124475526c1cf41b8
+#vendor/lib/libdeccfg.so|28b3aa2368d091b50ef7d5f3c3d44466a89172f8
+#vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
+#vendor/lib/libstagefright_soft_ac4dec.so|e1560136d7f16ed177e8f848fba3448014ea061c
+#vendor/lib/libstagefright_soft_ddpdec.so|c1a83910911cdab332088b10b2d3675b735a9524
+#vendor/lib/libstagefrightdolby.so|c4269437c623630cf9c79c2010a7cfb88828584a
+#vendor/lib/soundfx/libhwdap.so|6348b774b3df7bd2f485186f2ebc3e84d9435df8
+#vendor/lib/soundfx/libswdap.so|bd73d33628837d0e3aa18d85c5ffb8e95b87af1b
+#vendor/lib/soundfx/libswgamedap.so|a4d17b610b5cd873bd82c28f7361ba66a5d2c48e
+#vendor/lib/vendor.dolby.hardware.dms@2.0.so|73532d31c8fdad87b69e9cc1724dfc5b02a893e7
+#vendor/lib64/libdapparamstorage.so|b820de455f13bce531331f9e134b1e56b8a651d4
+#vendor/lib64/libdeccfg.so|adea652793ab688253b0b56d6c165625184eab54
+#vendor/lib64/libdlbdsservice.so|f8867071a19efabef94eae4eb62424a5a88b9ef0
+#vendor/lib64/libstagefright_soft_ac4dec.so|8c89d21ba388c05504f2950d8a7c1103e57214ad
+#vendor/lib64/libstagefright_soft_ddpdec.so|555b5b366c35bad0c6d6e98a3d04f1105e4d9e92
+#vendor/lib64/libstagefrightdolby.so|67157be87b3d8fe2c5a057044ce596ce1b68d16b
+#vendor/lib64/soundfx/libhwdap.so|901e19f8e271c8d228e41136ea8d611c3b3d30b4
+#vendor/lib64/soundfx/libswdap.so|a468c839bd18e31d50f92d371dbd079374667068
+#vendor/lib64/soundfx/libswgamedap.so|0491096a45e14d8097ceb80c15c0f946bbade389
+#vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
+#vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
 
 
-# Bluetooth
+# Bluetooth - from V816.0.11.0.UKOMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/nv_mac
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -184,7 +184,7 @@ vendor/lib64/libcacertclient.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
-# CDSP
+# CDSP - from V816.0.11.0.UKOMIXM
 -vendor/lib/libfastcvopt.so
 -vendor/lib64/libfastcvopt.so
 vendor/bin/cdsprpcd
@@ -262,6 +262,172 @@ vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
+
+# Camera
+vendor/lib64/camera/com.qti.actuator.lisa_ofilm_s5kgw3_dw9800_wide.so
+vendor/lib64/camera/com.qti.actuator.lisa_semco_s5kgw3_dw9800_wide.so
+vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_imx355_gt24p64e_ultra_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_s5k5e9yx04_gt24p64e_macro_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_s5kgw3_gt24p128e_wide_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.lisa_semco_s5kgw3_gt24p128e_wide_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.lisa_sunny_s5k3t2_gt24p64_front_eeprom.so
+vendor/lib64/camera/com.qti.eeprom.lisa_sunny_s5k5e9yx04_gt24p64e_macro_eeprom.so
+vendor/lib64/camera/com.qti.sensor.lisa_ofilm_imx355_ultra.so
+vendor/lib64/camera/com.qti.sensor.lisa_ofilm_s5k5e9yx04_macro.so
+vendor/lib64/camera/com.qti.sensor.lisa_ofilm_s5kgw3_wide.so
+vendor/lib64/camera/com.qti.sensor.lisa_semco_s5kgw3_wide.so
+vendor/lib64/camera/com.qti.sensor.lisa_sunny_s5k3t2_front.so
+vendor/lib64/camera/com.qti.sensor.lisa_sunny_s5k5e9yx04_macro.so
+vendor/lib64/camera/com.qti.sensormodule.lisa_ofilm_imx355_ultra.bin
+vendor/lib64/camera/com.qti.sensormodule.lisa_ofilm_s5k5e9yx04_macro.bin
+vendor/lib64/camera/com.qti.sensormodule.lisa_ofilm_s5kgw3_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.lisa_semco_s5kgw3_wide.bin
+vendor/lib64/camera/com.qti.sensormodule.lisa_sunny_s5k3t2_front.bin
+vendor/lib64/camera/com.qti.sensormodule.lisa_sunny_s5k5e9yx04_macro.bin
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.lisa_ofilm_imx355_ultra.bin
+vendor/lib64/camera/com.qti.tuned.lisa_ofilm_s5k5e9yx04_macro.bin
+vendor/lib64/camera/com.qti.tuned.lisa_ofilm_s5kgw3_wide.bin
+vendor/lib64/camera/com.qti.tuned.lisa_semco_s5kgw3_wide.bin
+vendor/lib64/camera/com.qti.tuned.lisa_sunny_s5k3t2_front.bin
+vendor/lib64/camera/com.qti.tuned.lisa_sunny_s5k5e9yx04_macro.bin
+vendor/lib64/camera/fdconfigpreview.bin
+vendor/lib64/camera/fdconfigpreviewlite.bin
+vendor/lib64/camera/fdconfigvideo.bin
+vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/com.qti.chiusecaseselector.so
+vendor/lib64/com.qti.settings.kodiak.so
+vendor/lib64/com.qti.stats.common.so
+vendor/lib64/com.qualcomm.mcx.distortionmapper.so
+vendor/lib64/com.qualcomm.mcx.linearmapper.so
+vendor/lib64/com.qualcomm.mcx.policy.mfl.so
+vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/camera.xiaomi.so
+vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libAF.so
+vendor/lib64/libFlickerDet.so
+vendor/lib64/libSNPE.so
+vendor/lib64/lib_sr_models.so
+vendor/lib64/libaidenoiser.so
+vendor/lib64/libaidenoiserv2.so
+vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
+vendor/lib64/libalCFR.so
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
+vendor/lib64/libanc_dc_base.so
+vendor/lib64/libanc_dc_plugin_xiaomi_v2.so;DISABLE_CHECKELF
+vendor/lib64/libanc_hdr.so
+vendor/lib64/libancbase.so
+vendor/lib64/libbitmlengine.so
+vendor/lib64/libbitmlenginev2.so
+vendor/lib64/libc++_shared.so
+vendor/lib64/libcamera_dirty.so
+vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/libcamera_scene.so
+vendor/lib64/libcamerapostproc.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2svarnn.so
+vendor/lib64/libcapiv2vop.so
+vendor/lib64/libceres.so
+vendor/lib64/libchilog.so
+vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libcom.xiaomi.debug.so
+vendor/lib64/libcom.xiaomi.grallocutils.so
+vendor/lib64/libcom.xiaomi.metadatautils.so
+vendor/lib64/libcom.xiaomi.pluginutils.so
+vendor/lib64/libcvface_api.so
+vendor/lib64/libdeflicker.so
+vendor/lib64/libfocus.so
+vendor/lib64/libhdrdynamic.so
+vendor/lib64/libhdrdynamicootf.so
+vendor/lib64/libhexagon_controller.so
+vendor/lib64/libipebpsstriping.so
+vendor/lib64/libipebpsstriping170.so
+vendor/lib64/libjpege.so
+vendor/lib64/libmctfengine_stub.so
+vendor/lib64/libmiStereoFactoryRemapBasicLib.so
+vendor/lib64/libmiStereoFactoryRemapLib.so
+vendor/lib64/libmiStereoFactoryRemapLib_v2.so;FIX_SONAME
+vendor/lib64/libmiXmlParser.so
+vendor/lib64/libmiai_portraitsupernight.so
+vendor/lib64/libmialgo_ai_vision.so
+vendor/lib64/libmialgo_basic.so
+vendor/lib64/libmialgo_ie_capture.so
+vendor/lib64/libmialgo_ie_preview.so
+vendor/lib64/libmialgo_image_colourkeeping.so
+vendor/lib64/libmialgo_pureShot.so;DISABLE_CHECKELF
+vendor/lib64/libmialgo_pureView.so
+vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
+vendor/lib64/libmialgo_sd.so
+vendor/lib64/libmialgo_utils.so
+vendor/lib64/libmialgo_video_colourkeeping.so
+vendor/lib64/libmialgo_video_enhance.so
+vendor/lib64/libmialgo_video_seg.so
+vendor/lib64/libmialgoengine.so
+vendor/lib64/libmibokeh_855.so
+vendor/lib64/libmibokeh_mask_dsp.so
+vendor/lib64/libmiphone_preview_bokeh.so
+vendor/lib64/libmm-color-convertor.so
+vendor/lib64/libmpbase.so
+vendor/lib64/libnanopb.so
+vendor/lib64/libofflinedump.so
+vendor/lib64/libofflinelog.so
+vendor/lib64/libomp.so
+vendor/lib64/libopencv.so
+vendor/lib64/libopestriping.so
+vendor/lib64/libos.so
+vendor/lib64/libqll10.so
+vendor/lib64/libqllengine.so;DISABLE_CHECKELF
+vendor/lib64/librelight_only.so
+vendor/lib64/libremosaic_wrapper.so
+vendor/lib64/libremosaiclib.so
+vendor/lib64/libsdk_sr.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/lib64/libsnpe_dsp_domains_v3.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib64/libsns_fastRPC_util.so
+vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libswregistrationalgo.so
+vendor/lib64/libsynx.so
+vendor/lib64/libtfestriping.so
+vendor/lib64/libthreadutils.so
+vendor/lib64/libvideoBokeh.so
+vendor/lib64/libvideofilter_only.so
+vendor/lib64/libvidhance.so
+vendor/lib64/libwa_depth.so
+vendor/lib64/libwa_opticalzoomfactor.so
+vendor/lib64/libwa_refocus.so
+vendor/lib64/libwa_rtdof.so
+vendor/lib64/libwa_sat.so
+vendor/lib64/libxmi_hdr_checker.so
+vendor/lib64/libxmi_high_dynamic_range.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
+vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+
+# Camera arcsoft
+vendor/lib64/libarcsoft_beautyshot.so
+vendor/lib64/libarcsoft_hdrplus_hvx_stub.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_qnnhtp.so
+vendor/lib64/libarcsoft_super_night_raw.so;DISABLE_CHECKELF
+
+# Camera camerax
+vendor/lib/libcamxexternalformatutils.so
+vendor/lib64/libcamxexternalformatutils.so
+vendor/lib64/libcamxfacialfeatures.so
+vendor/lib64/libcamxfdalgo.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxifestriping.so
+vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamxqsatalgo.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxswispiqmodule.so
+vendor/lib64/libcamxswprocessalgo.so
+vendor/lib64/libcamxtintlessalgo.so
 
 # Camera components
 vendor/lib64/camera/components/com.mi.node.AIIE.so
@@ -374,7 +540,6 @@ vendor/etc/camera/det_quantize.dlc
 vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/hdrcheckerparamsettings.yml
 vendor/etc/camera/intsense_config_optical_zoom_2sat.bin
-vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/miai_hdr_config.yaml
 vendor/etc/camera/mibokeh_855_opencl.bin
 vendor/etc/camera/mibokeh_855_parameter.bin
@@ -454,6 +619,11 @@ vendor/lib64/com.qti.feature2.statsregeneration.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 
+# Camera face detection
+vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libmegface.so
+
 # Camera firmware
 vendor/firmware/CAMERA_ICP_170.elf
 
@@ -476,171 +646,14 @@ vendor/lib64/camera/plugins/com.xiaomi.plugin.sr.so
 vendor/lib64/camera/plugins/com.xiaomi.plugin.supernight.so
 
 # Camera sensors
-vendor/lib64/camera/com.qti.actuator.lisa_ofilm_s5kgw3_dw9800_wide.so
-vendor/lib64/camera/com.qti.actuator.lisa_semco_s5kgw3_dw9800_wide.so
-vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_imx355_gt24p64e_ultra_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_s5k5e9yx04_gt24p64e_macro_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.lisa_ofilm_s5kgw3_gt24p128e_wide_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.lisa_semco_s5kgw3_gt24p128e_wide_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.lisa_sunny_s5k3t2_gt24p64_front_eeprom.so
-vendor/lib64/camera/com.qti.eeprom.lisa_sunny_s5k5e9yx04_gt24p64e_macro_eeprom.so
-vendor/lib64/camera/com.qti.sensor.lisa_ofilm_imx355_ultra.so
-vendor/lib64/camera/com.qti.sensor.lisa_ofilm_s5k5e9yx04_macro.so
-vendor/lib64/camera/com.qti.sensor.lisa_ofilm_s5kgw3_wide.so
-vendor/lib64/camera/com.qti.sensor.lisa_semco_s5kgw3_wide.so
-vendor/lib64/camera/com.qti.sensor.lisa_sunny_s5k3t2_front.so
-vendor/lib64/camera/com.qti.sensor.lisa_sunny_s5k5e9yx04_macro.so
-vendor/lib64/camera/com.qti.sensormodule.lisa_ofilm_imx355_ultra.bin
-vendor/lib64/camera/com.qti.sensormodule.lisa_ofilm_s5k5e9yx04_macro.bin
-vendor/lib64/camera/com.qti.sensormodule.lisa_ofilm_s5kgw3_wide.bin
-vendor/lib64/camera/com.qti.sensormodule.lisa_semco_s5kgw3_wide.bin
-vendor/lib64/camera/com.qti.sensormodule.lisa_sunny_s5k3t2_front.bin
-vendor/lib64/camera/com.qti.sensormodule.lisa_sunny_s5k5e9yx04_macro.bin
-vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.lisa_ofilm_imx355_ultra.bin
-vendor/lib64/camera/com.qti.tuned.lisa_ofilm_s5k5e9yx04_macro.bin
-vendor/lib64/camera/com.qti.tuned.lisa_ofilm_s5kgw3_wide.bin
-vendor/lib64/camera/com.qti.tuned.lisa_semco_s5kgw3_wide.bin
-vendor/lib64/camera/com.qti.tuned.lisa_sunny_s5k3t2_front.bin
-vendor/lib64/camera/com.qti.tuned.lisa_sunny_s5k5e9yx04_macro.bin
-vendor/lib64/camera/fdconfigpreview.bin
-vendor/lib64/camera/fdconfigpreviewlite.bin
-vendor/lib64/camera/fdconfigvideo.bin
-vendor/lib64/camera/fdconfigvideolite.bin
-
-# Camera settings
-vendor/lib64/com.qti.settings.kodiak.so
-
-# Camera
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib64/com.qti.chiusecaseselector.so
-vendor/lib64/com.qti.stats.common.so
-vendor/lib64/com.qualcomm.mcx.distortionmapper.so
-vendor/lib64/com.qualcomm.mcx.linearmapper.so
-vendor/lib64/com.qualcomm.mcx.policy.mfl.so
-vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
-vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/camera.xiaomi.so
-vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/libAF.so
-vendor/lib64/libFlickerDet.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
-vendor/lib64/libQnnHtpStub.so
-vendor/lib64/libSNPE.so
-vendor/lib64/lib_sr_models.so
-vendor/lib64/libaidenoiser.so
-vendor/lib64/libaidenoiserv2.so
-vendor/lib64/libalAILDC.so
-vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalhLDC.so
-vendor/lib64/libanc_dc_base.so
-vendor/lib64/libanc_dc_plugin_xiaomi_v2.so
-vendor/lib64/libanc_hdr.so
-vendor/lib64/libancbase.so
-vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
-vendor/lib64/libarcsoft_qnnhtp.so
-vendor/lib64/libarcsoft_super_night_raw.so
-vendor/lib64/libbitmlengine.so
-vendor/lib64/libbitmlenginev2.so
-vendor/lib64/libc++_shared.so
-vendor/lib64/libcamera_dirty.so
-vendor/lib64/libcamera_nn_stub.so
-vendor/lib64/libcamera_scene.so
-vendor/lib64/libcamerapostproc.so
-vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libcamxfacialfeatures.so
-vendor/lib64/libcamxfdalgo.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
-vendor/lib64/libcamxqsatalgo.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswispiqmodule.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libceres.so
-vendor/lib64/libchilog.so
-vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcom.xiaomi.debug.so
-vendor/lib64/libcom.xiaomi.grallocutils.so
-vendor/lib64/libcom.xiaomi.metadatautils.so
-vendor/lib64/libcom.xiaomi.pluginutils.so
-vendor/lib64/libcvface_api.so
-vendor/lib64/libdeflicker.so
-vendor/lib64/libfastcvdsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libfocus.so
-vendor/lib64/libhexagon_controller.so
-vendor/lib64/libhta.so
-vendor/lib64/libipebpsstriping.so
-vendor/lib64/libipebpsstriping170.so
-vendor/lib64/libjpege.so
-vendor/lib64/libmctfengine_stub.so
-vendor/lib64/libmegface.so
-vendor/lib64/libmiStereoFactoryRemapBasicLib.so
-vendor/lib64/libmiStereoFactoryRemapLib.so
-vendor/lib64/libmiStereoFactoryRemapLib_v2.so
-vendor/lib64/libmiXmlParser.so
-vendor/lib64/libmiai_portraitsupernight.so
-vendor/lib64/libmialgo_ai_vision.so
-vendor/lib64/libmialgo_basic.so
-vendor/lib64/libmialgo_ie_capture.so
-vendor/lib64/libmialgo_ie_preview.so
-vendor/lib64/libmialgo_image_colourkeeping.so
-vendor/lib64/libmialgo_pureShot.so
-vendor/lib64/libmialgo_pureView.so
-vendor/lib64/libmialgo_rfs.so
-vendor/lib64/libmialgo_sd.so
-vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgo_video_colourkeeping.so
-vendor/lib64/libmialgo_video_enhance.so
-vendor/lib64/libmialgo_video_seg.so
-vendor/lib64/libmialgoengine.so
-vendor/lib64/libmibokeh_855.so
-vendor/lib64/libmibokeh_mask_dsp.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
-vendor/lib64/libmmcamera_faceproc.so
+vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libofflinedump.so
-vendor/lib64/libofflinelog.so
-vendor/lib64/libomp.so
-vendor/lib64/libopencv.so
-vendor/lib64/libopestriping.so
-vendor/lib64/libos.so
-vendor/lib64/libqll10.so
-vendor/lib64/libqllengine.so
-vendor/lib64/librelight_only.so
-vendor/lib64/libremosaic_wrapper.so
-vendor/lib64/libremosaiclib.so
-vendor/lib64/libsdk_sr.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libsnpe_dsp_domains_v3.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libsynx.so
-vendor/lib64/libtfestriping.so
-vendor/lib64/libthreadutils.so
-vendor/lib64/libvideoBokeh.so
-vendor/lib64/libvideofilter_only.so
-vendor/lib64/libvidhance.so
-vendor/lib64/libwa_depth.so
-vendor/lib64/libwa_opticalzoomfactor.so
-vendor/lib64/libwa_refocus.so
-vendor/lib64/libwa_rtdof.so
-vendor/lib64/libwa_sat.so
-vendor/lib64/libxmi_hdr_checker.so
-vendor/lib64/libxmi_high_dynamic_range.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
-vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 
 # Charger (Mi Turbo Charge)
 vendor/bin/batterysecret
