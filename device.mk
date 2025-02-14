@@ -187,6 +187,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libgui_vendor \
     libion.vendor \
+    libutilscallstack.vendor \
     android.hardware.graphics.common-V3-ndk.vendor \
     libbufferhub
 
@@ -630,7 +631,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media \
     perf \
     telephony \
-    usb \
     wfd
 
 # Power
