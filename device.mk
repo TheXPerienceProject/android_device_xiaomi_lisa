@@ -187,6 +187,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libgui_vendor \
     libion.vendor \
+    libutilscallstack.vendor \
     android.hardware.graphics.common-V3-ndk.vendor \
     libbufferhub
 
@@ -630,7 +631,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media \
     perf \
     telephony \
-    usb \
     wfd
 
 # Power
@@ -742,8 +742,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3 \
-    android.hardware.usb@1.3.vendor
+    android.hardware.usb-service.qti
 
 # Vibrator
 PRODUCT_PACKAGES += \
