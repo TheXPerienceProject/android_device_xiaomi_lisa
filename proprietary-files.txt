@@ -113,7 +113,7 @@ vendor/lib/libqtigef.so
 vendor/lib/libmmhardware.so
 vendor/lib/libresampler.so
 vendor/lib/libssrec.so
-vendor/lib/libvideoNS.so
+vendor/lib/libvideoNS.so;DISABLE_CHECKELF
 vendor/lib64/liba2dpoffload.so
 vendor/lib64/libresampler.so
 
@@ -151,7 +151,6 @@ vendor/firmware/tfa98xx.cnt
 
 # Bluetooth - from V816.0.11.0.UKOMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/bin/nv_mac
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/btaudio_offload_if.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
@@ -179,14 +178,13 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # CAcert
--vendor/app/CACertService/CACertService.apk
+vendor/app/CACertService/CACertService.apk
 vendor/lib64/libcacertclient.so
 vendor/lib64/libjnihelper.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # CDSP - from V816.0.11.0.UKOMIXM
--vendor/lib/libfastcvopt.so
--vendor/lib64/libfastcvopt.so
+vendor/lib/libfastcvopt.so
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsp_default_listener.so
@@ -197,10 +195,8 @@ vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
-vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
@@ -235,15 +231,15 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
 
 # CNE
--vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
 vendor/bin/cnd
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libwms.so
-vendor/lib64/libwqe.so
+vendor/lib64/libwqe.so;DISABLE_CHECKELF
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
@@ -370,7 +366,6 @@ vendor/lib64/libmibokeh_mask_dsp.so
 vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libnanopb.so
 vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libomp.so
@@ -385,12 +380,6 @@ vendor/lib64/libremosaiclib.so
 vendor/lib64/libsdk_sr.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libsnpe_dsp_domains_v3.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
@@ -661,14 +650,14 @@ vendor/bin/batterysecret
 # Mi Charge
 vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
 vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
 vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib/vendor.xiaomi.hardware.micharge@1.0.so
 vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
 
 # Computer Vision (FastCV)
--vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastcvopt.so
 vendor/etc/cvp/v2.0/facedetection/model1.dat
 vendor/etc/cvp/v2.1/facedetection/model2.dat
 vendor/lib64/libcvp2_1.so
@@ -688,11 +677,11 @@ vendor/lib64/hw/consumerir.lahaina.so
 # DPM
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libdpmqmihal.so
 
 # DRM (Widevine)
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/libwvhidl.so
@@ -727,8 +716,8 @@ vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 # Diag
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
--vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
-vendor/lib64/vendor.qti.diaghal@1.0.so
+vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display
 vendor/bin/hw/vendor.qti.hardware.display.composer-service|129d35e3f6af66326f4a097ea390c88b6f1a3950
@@ -771,7 +760,7 @@ vendor/lib64/libdisplayfeature.so
 vendor/lib64/libdisplayfeatureservice.so
 vendor/lib64/libmi-stc-HW-modulate.so
 vendor/lib64/libtinyxml.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display calibration
 vendor/etc/mdss_dsi_k9d_36_02_0a_dsc_cmd_mi.xml
@@ -810,17 +799,16 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
 
 # GNSS
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 vendor/bin/mlid
 vendor/bin/xtra-daemon
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so
 vendor/lib64/libaoa.so
-vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libizat_client_api.so
@@ -852,10 +840,8 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # Graphics (Adreno) - from AOSPA
-vendor/lib/libkcl.so | abb2a89beb36b5c9412cb84a2dacbc05
-vendor/lib/libkernelmanager.so | 34fb1ef82a7d2b43640cacc51c89e422
-vendor/lib64/libkcl.so | fd376542f0081dec302c73e374556fc4
-vendor/lib64/libkernelmanager.so | f9e2d973ad6e41b18b17a3fb745283c2
+vendor/lib/libkernelmanager.so|34fb1ef82a7d2b43640cacc51c89e422
+vendor/lib64/libkernelmanager.so|f9e2d973ad6e41b18b17a3fb745283c2
 
 # Graphics (Adreno) - from Adreno v767
 vendor/lib/egl/eglSubDriverAndroid.so|967f459692208890aa31f260b151fa00fbc072c3
@@ -870,10 +856,10 @@ vendor/lib/libCB.so|4af7c81bfbb963a3e5f0185225febc7294a3e262
 vendor/lib/libOpenCL.so|a8a3952c475cf214fec74c324e540ee800ee9727
 vendor/lib/libOpenCL_adreno.so|042fc23bb794f42a299851a0493a2ea0e0f8e964
 vendor/lib/libVkLayer_q3dtools.so|c9953ac8a64b9b9a31173c56812bead633a7d379
-vendor/lib/libadreno_app_profiles.so|991a98bef1a4e7e47d5120c2bf0080e1cc78388b
+vendor/lib/libadreno_app_profiles.so;DISABLE_CHECKELF|991a98bef1a4e7e47d5120c2bf0080e1cc78388b
 vendor/lib/libadreno_utils.so|385fcb9e9c734699fc205be3d8563f7ceb3d6d7d
 vendor/lib/libc2d30_bltlib.so|d1f37cf4d50619f59c5b199893fa93f134973647
-vendor/lib/libdmabufheap.so|82112aa70e46329354dcec94a6c0c98f35251852
+vendor/lib/libdmabufheap.so;MODULE_SUFFIX=_vendor|82112aa70e46329354dcec94a6c0c98f35251852
 vendor/lib/libgpudataproducer.so|2f3348614ea21ed4548154d0ab52ca2256d28e80
 vendor/lib/libgsl.so|5156714889b29c642233d0be64cd9e1bf5c6c9bf
 vendor/lib/libkcl.so|3b0a64440f0a1166de6867864470207a9603a094
@@ -893,10 +879,10 @@ vendor/lib64/libCB.so|92c41546675f22529037095273769f3f2a99b925
 vendor/lib64/libOpenCL.so|8b7724a07375196fee630a562f7eff716e5c6608
 vendor/lib64/libOpenCL_adreno.so|c3c9c52a61d75be6ee7918fd0c7931bcd327dc7a
 vendor/lib64/libVkLayer_q3dtools.so|5ddfe2401db02f851d6472a7ba57c5fc67923675
-vendor/lib64/libadreno_app_profiles.so|05d3090fe4adf1f7c59dd53c818d41245d4af5f6
+vendor/lib64/libadreno_app_profiles.so;DISABLE_CHECKELF|05d3090fe4adf1f7c59dd53c818d41245d4af5f6
 vendor/lib64/libadreno_utils.so|d95e8c693f7a492306b934d955a9d2c19668459d
 vendor/lib64/libc2d30_bltlib.so|870b3b1950b3c918ba73292630d2a3dd1249dda7
-vendor/lib64/libdmabufheap.so|3016e7d70cc0b43079e10fd1486e0884e0640c1d
+vendor/lib64/libdmabufheap.so;MODULE_SUFFIX=_vendor|3016e7d70cc0b43079e10fd1486e0884e0640c1d
 vendor/lib64/libgpudataproducer.so|a2ebbc621637de0a63b5a6663b02575cb394fcda
 vendor/lib64/libgsl.so|355dbc1034259a080342f7e7e069d534563b2a5f
 vendor/lib64/libllvm-glnext.so|a2d9539c4947f5e37489843c04a9115db259ca9a
@@ -926,10 +912,10 @@ vendor/firmware/a660_zap.elf
 vendor/firmware/a660_zap.mdt
 
 # HotwordEnrollment
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
--system_ext/framework/com.android.hotwordenrollment.common.util.jar
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
 vendor/bin/ims_rtp_daemon
@@ -973,7 +959,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
@@ -1034,8 +1020,8 @@ vendor/lib64/c2.dolby.hevc.sec.dec.so
 vendor/lib64/c2.dolby.store.so
 vendor/lib64/libdolbyottcameracontrol.so
 vendor/lib64/libdolbyvision.so
-vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk_vendor.so
-vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0_vendor.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk_vendor.so;FIX_SONAME
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0_vendor.so;FIX_SONAME
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_1v.b00
@@ -1071,18 +1057,18 @@ vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/media_shima_v1/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
 vendor/etc/video_system_specs.json
-vendor/lib/libmmosal.so
-vendor/lib64/libmmosal.so
+vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # Mlipay
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so;MODULE_SUFFIX=_vendor
 
 # NFC configs
 vendor/etc/libnfc-nci.conf
@@ -1096,7 +1082,7 @@ vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
 vendor/bin/nv_mac
 
 # Neural networks - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|8fc1b3a62a501b5e4925de0f1334e3feeaf022de
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
 vendor/lib64/libQnnHtpAltPrepStub.so|d6aa4ce9d161b0107dd62bb2325fcc1f3c772b30
@@ -1106,21 +1092,20 @@ vendor/lib64/unnhal-acc-gpu.so|1cf2ba611619b6578b0b547226aeccf5da6472c7
 vendor/lib64/unnhal-acc-htp.so|e58dc452c233cce150b0b0019f29c65ebde9f12c
 
 # OMX
-vendor/lib/libstagefright_soft_aacdec.so
-vendor/lib/libstagefright_soft_amrdec.so
-vendor/lib/libstagefright_soft_amrdec.so
-vendor/lib/libstagefright_soft_flacdec.so
-vendor/lib/libstagefright_soft_g711dec.so
-vendor/lib/libstagefright_soft_gsmdec.so
-vendor/lib/libstagefright_soft_mp3dec.so
-vendor/lib/libstagefright_soft_opusdec.so
-vendor/lib/libstagefright_soft_rawdec.so
-vendor/lib/libstagefright_soft_vorbisdec.so
-vendor/lib/libstagefright_soft_aacenc.so
-vendor/lib/libstagefright_soft_amrnbenc.so
-vendor/lib/libstagefright_soft_amrwbenc.so
-vendor/lib/libstagefright_soft_flacenc.so
-vendor/lib/libstagefright_flacdec.so
+vendor/lib/libstagefright_soft_aacdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_amrdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_flacdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_g711dec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_gsmdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_mp3dec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_opusdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_rawdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_vorbisdec.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_aacenc.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_amrnbenc.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_amrwbenc.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_soft_flacenc.so;DISABLE_CHECKELF
+vendor/lib/libstagefright_flacdec.so;DISABLE_CHECKELF
 
 # Perf - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
@@ -1138,7 +1123,7 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Power-off alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+product/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -1182,10 +1167,9 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
-vendor/lib64/libqrtrclient.so
 
 # RIL
--vendor/app/IWlanService/IWlanService.apk
+vendor/app/IWlanService/IWlanService.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/adpl
 vendor/bin/hw/qcrilNrd
@@ -1370,11 +1354,10 @@ vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
 vendor/etc/sensors/hals.conf
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
 vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libssccalapi.so
-vendor/lib64/libsdsprpc.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
@@ -1403,7 +1386,7 @@ vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|e5e18a9383e9c16f1016a
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|c5514ccf10d2ff9bd22695e86156d9a7f6da1063
 
 # Soter service (Tencent)
- -vendor/app/SoterService/SoterService.apk
+vendor/app/SoterService/SoterService.apk
  
 # Soter
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
@@ -1446,7 +1429,7 @@ vendor/bin/mi_thermald
 vendor/lib64/libthermalclient.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
@@ -1547,10 +1530,10 @@ vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfdutils_proprietary.so
 vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
 vendor/lib64/libmiracast.so
 vendor/lib64/libwfddisplayconfig_proprietary.so
 vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=_vendor
