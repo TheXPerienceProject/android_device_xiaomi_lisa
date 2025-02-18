@@ -101,8 +101,8 @@ vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libmisoundfx.so
 
 # Audio Hardware - from V816.0.11.0.UKOMIXM
-vendor/lib/hw/audio.primary.lahaina.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/hw/audio.primary.lahaina.so:vendor/lib/hw/audio.primary.lisa.so;FIX_SONAME
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_lisa.so;FIX_SONAME
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
@@ -112,9 +112,9 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
 vendor/lib/libmmhardware.so
 vendor/lib/libresampler.so
-vendor/lib/libssrec.so
+vendor/lib/libssrec.so:vendor/lib/libssrec_lisa.so;FIX_SONAME
 vendor/lib/libvideoNS.so;DISABLE_CHECKELF
-vendor/lib64/liba2dpoffload.so
+vendor/lib64/liba2dpoffload.so:vendor/lib64/liba2dpoffload_lisa.so;FIX_SONAME
 vendor/lib64/libresampler.so
 
 # Audio firmware
@@ -799,7 +799,8 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+#vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.fpc.so
 
 # GNSS
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
@@ -1051,13 +1052,24 @@ vendor/firmware/vpu20_1v_unsigned.mbn
 # Media - from lisa V816.0.3.0.UKOMIXM
 system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
-vendor/etc/media_profiles_yupik_v1.xml
+vendor/bin/hw/vendor.qti.media.c2@1.0-service
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/media/video_system_specs.json
 vendor/etc/media_lahaina/video_system_specs.json
 vendor/etc/media_shima_v1/video_system_specs.json
 vendor/etc/media_yupik_v1/video_system_specs.json
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy
 vendor/etc/video_system_specs.json
 vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
+vendor/lib/libqc2vppfilter.so
+vendor/lib/libqcodec2_base.so
+vendor/lib/libqcodec2_basecodec.so
+vendor/lib/libqcodec2_core.so
+vendor/lib/libqcodec2_hooks.so
+vendor/lib/libqcodec2_platform.so
+vendor/lib/libqcodec2_utils.so
+vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # Mlipay
@@ -1090,22 +1102,6 @@ vendor/lib64/libQnnHtpStub.so
 vendor/lib64/unnhal-acc-common.so|85794b7757d3d80090326f8eddeefdf928eab259
 vendor/lib64/unnhal-acc-gpu.so|1cf2ba611619b6578b0b547226aeccf5da6472c7
 vendor/lib64/unnhal-acc-htp.so|e58dc452c233cce150b0b0019f29c65ebde9f12c
-
-# OMX
-vendor/lib/libstagefright_soft_aacdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_amrdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_flacdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_g711dec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_gsmdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_mp3dec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_opusdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_rawdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_vorbisdec.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_aacenc.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_amrnbenc.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_amrwbenc.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_soft_flacenc.so;DISABLE_CHECKELF
-vendor/lib/libstagefright_flacdec.so;DISABLE_CHECKELF
 
 # Perf - LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c

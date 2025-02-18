@@ -1,3 +1,6 @@
+# Audio hardware
+ro.hardware.audio.primary=lisa
+
 # audio
 audio.offload.gapless.enabled=true
 

@@ -93,6 +93,10 @@ blob_fixups: blob_fixups_user_type = {
 #        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
+    'vendor/lib/hw/audio.primary.lisa.so': blob_fixup()
+        .binary_regex_replace(b'/vendor/lib/liba2dpoffload\\.so', b'liba2dpoffload_lisa.so\x00\x00\x00\x00\x00\x00\x00')
+        .binary_regex_replace(b'/vendor/lib64/liba2dpoffload\\.so', b'liba2dpoffload_lisa.so\x00\x00\x00\x00\x00\x00\x00')
+        .binary_regex_replace(b'/vendor/lib/libssrec\\.so', b'libssrec_lisa.so\x00\x00\x00\x00\x00\x00\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
