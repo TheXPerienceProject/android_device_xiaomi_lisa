@@ -42,6 +42,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor
+
+PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
     audio.primary.default \
