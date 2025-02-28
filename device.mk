@@ -639,7 +639,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service \
+    android.hardware.power-service-qti \
     android.hardware.power@1.2.vendor \
     vendor.qti.hardware.display.config-V5-ndk.vendor \
     vendor.qti.hardware.perf@2.2.vendor
