@@ -123,15 +123,13 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    LLVM=1 \
-    LLVM_IAS=1 \
-    TARGET_PRODUCT=$(PRODUCT_DEVICE)
+TARGET_KERNEL_ADDITIONAL_FLAGS := TARGET_PRODUCT=$(PRODUCT_DEVICE)
 #TARGET_KERNEL_LLVM_BINUTILS := true
 #TARGET_KERNEL_CLANG_VERSION := 20
 #KERNEL_CC := CC=clang
-TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
-TARGET_KERNEL_CONFIG := lisa_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/debugfs.config vendor/xiaomi_QGKI.config
+TARGET_KERNEL_CONFIG += vendor/lisa_QGKI.config
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
@@ -149,7 +147,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOOT_KERNEL_MODULES := \
     hwid.ko \
     goodix_core.ko \
-    xiaomi_touch.ko
+    xiaomi_touch.ko \
+    msm_drm.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 

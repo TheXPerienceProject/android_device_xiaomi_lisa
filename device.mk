@@ -42,6 +42,9 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
+    libaudioroute.vendor
+
+PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.r_submix.default \
     audio.primary.default \
@@ -390,8 +393,7 @@ PRODUCT_COPY_FILES += \
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh
+    init.qcom.usb.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
@@ -748,6 +750,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.usb.config=mtp,adb
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.lisa
@@ -817,3 +822,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink
+
+PRODUCT_PACKAGES += \
+    TouchFeatureas
