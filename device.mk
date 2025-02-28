@@ -197,8 +197,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
+# Properties
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
+    ro.com.google.lens.oem_camera_package=com.android.camera \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera \
+    ro.miui.notch=1 \
+    ro.product.mod_device=lisa
+
 
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=1 \

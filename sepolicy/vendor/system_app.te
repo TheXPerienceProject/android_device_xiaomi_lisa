@@ -7,3 +7,10 @@ allow system_app zygote:unix_stream_socket { getopt };
 # LineageHardware
 allow system_app default_android_service:service_manager find;
 
+# Memtrack aidl
+allow system_app {
+    hal_memtrack_default
+    hal_nfc_default
+    hal_thermal_default
+    vendor_hal_usb_qti 
+    }:binder call;
