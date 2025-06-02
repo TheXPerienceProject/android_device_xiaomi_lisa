@@ -1,0 +1,100 @@
+From dee3cee4c9e63826e9b6535d74900c92821b51b4 Mon Sep 17 00:00:00 2001
+From: Omkar Chandorkar <gotenksIN@aospa.co>
+Date: Thu, 15 Jun 2023 14:26:05 +0900
+Subject: [PATCH] lisa: rro_overlays: Enable secure NFC functionality
+
+Change-Id: I4e9acc7d8ec14237512aadf100d564984aa5a896
+Co-authored-by: Adithya R <gh0strider.2k18.reborn@gmail.com>
+Signed-off-by: klozz <carlosj@klozz.dev>
+---
+ device.mk                                     |  1 +
+ rro_overlays/LisaNfcOverlay/Android.bp        | 18 ++++++++++++++
+ .../LisaNfcOverlay/AndroidManifest.xml        | 22 +++++++++++++++++
+ .../LisaNfcOverlay/res/values/config.xml      | 24 +++++++++++++++++++
+ 4 files changed, 65 insertions(+)
+ create mode 100644 rro_overlays/LisaNfcOverlay/Android.bp
+ create mode 100644 rro_overlays/LisaNfcOverlay/AndroidManifest.xml
+ create mode 100644 rro_overlays/LisaNfcOverlay/res/values/config.xml
+
+diff --git a/rro_overlays/LisaNfcOverlay/Android.bp b/rro_overlays/LisaNfcOverlay/Android.bp
+new file mode 100644
+index 0000000..650b1fb
+--- /dev/null
++++ b/rro_overlays/LisaNfcOverlay/Android.bp
+@@ -0,0 +1,18 @@
++// Copyright (C) 2022 Paranoid Android
++//
++// Licensed under the Apache License, Version 2.0 (the "License");
++// you may not use this file except in compliance with the License.
++// You may obtain a copy of the License at
++//
++//      http://www.apache.org/licenses/LICENSE-2.0
++//
++// Unless required by applicable law or agreed to in writing, software
++// distributed under the License is distributed on an "AS IS" BASIS,
++// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++// See the License for the specific language governing permissions and
++// limitations under the License.
++
++runtime_resource_rro_overlays {
++    name: "LisaNfcOverlay",
++    vendor: true,
++}
+diff --git a/rro_overlays/LisaNfcOverlay/AndroidManifest.xml b/rro_overlays/LisaNfcOverlay/AndroidManifest.xml
+new file mode 100644
+index 0000000..d8e6332
+--- /dev/null
++++ b/rro_overlays/LisaNfcOverlay/AndroidManifest.xml
+@@ -0,0 +1,22 @@
++<?xml version="1.0" encoding="utf-8"?>
++<!-- Copyright (C) 2022 Paranoid Android
++
++     Licensed under the Apache License, Version 2.0 (the "License");
++     you may not use this file except in compliance with the License.
++     You may obtain a copy of the License at
++
++          http://www.apache.org/licenses/LICENSE-2.0
++
++     Unless required by applicable law or agreed to in writing, software
++     distributed under the License is distributed on an "AS IS" BASIS,
++     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++     See the License for the specific language governing permissions and
++     limitations under the License.
++-->
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.android.nfc.lisa">
++
++    <rro_overlays
++        android:isStatic="true"
++        android:targetPackage="com.android.nfc" />
++</manifest>
+diff --git a/rro_overlays/LisaNfcOverlay/res/values/config.xml b/rro_overlays/LisaNfcOverlay/res/values/config.xml
+new file mode 100644
+index 0000000..58aeb78
+--- /dev/null
++++ b/rro_overlays/LisaNfcOverlay/res/values/config.xml
+@@ -0,0 +1,24 @@
++<?xml version="1.0" encoding="utf-8"?>
++<!--
++     Copyright (C) 2023 Paranoid Android
++
++     Licensed under the Apache License, Version 2.0 (the "License");
++     you may not use this file except in compliance with the License.
++     You may obtain a copy of the License at
++
++          http://www.apache.org/licenses/LICENSE-2.0
++
++     Unless required by applicable law or agreed to in writing, software
++     distributed under the License is distributed on an "AS IS" BASIS,
++     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++     See the License for the specific language governing permissions and
++     limitations under the License.
++-->
++<resources>
++
++    <!-- List of SKUs where Secure NFC functionality is supported -->
++    <string-array name="config_skuSupportsSecureNfc">
++        <item>lisa</item>
++    </string-array>
++
++</resources>
