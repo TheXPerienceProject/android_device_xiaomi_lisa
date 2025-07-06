@@ -201,7 +201,6 @@ vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
 vendor/lib64/libmiStereoFactoryRemapLib_v2.so;FIX_SONAME
-vendor/lib64/libmiXmlParser.so
 vendor/lib64/libmiai_portraitsupernight.so
 vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_basic.so
@@ -425,9 +424,9 @@ vendor/etc/camera/xiaomi/thirdpartyjpegsnapshot.json
 vendor/etc/camera/xiaomi/thirdpartysnapshot.json
 
 # Camera face detection
-vendor/etc/camera/megviifacepp_0_5_2_model # :vendor/etc/camera/facedetectpp_0_5_2_model
-vendor/lib64/libMegviiFacepp-0.5.2.so #:vendor/lib64/libFaceDetectpp-0.5.2.so;FIX_SONAME
-vendor/lib64/libmegface.so #:vendor/lib64/libfacedet.so;FIX_SONAME
+vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
+vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so;FIX_SONAME
+vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so;FIX_SONAME
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP_170.elf
@@ -518,14 +517,6 @@ vendor/firmware/vpu20_1v_unsigned.mbn
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
-
-# Sensors (citsensor)
-vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
-vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml
-vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
