@@ -19,9 +19,10 @@ PRODUCT_NAME := xperience_lisa
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=lisa_global \
     BuildDesc="lisa_global-user 14 UKQ1.231108.001 V816.0.10.0.UKOMIXM release-keys" \
-    BuildFingerprint=Xiaomi/lisa_global/lisa:14/UKQ1.231108.001/V816.0.10.0.UKOMIXM:user/release-keys
+    BuildFingerprint=Xiaomi/lisa_global/lisa:14/UKQ1.231108.001/V816.0.10.0.UKOMIXM:user/release-keys \
+    DeviceProduct=lisa \
+    SystemName=lisa_global
 
 XPERIENCE_MAINTAINER := Kισżż
 #XPERIENCE_CHIPSET := "Snapdragon 778G"
