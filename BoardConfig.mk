@@ -20,6 +20,11 @@ TARGET_KERNEL_CONFIG += vendor/lisa_QGKI.config
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
+    adsp_loader_dlkm.ko \
+    q6_dlkm.ko \
+    q6_notifier_dlkm.ko \
+    q6_pdr_dlkm.ko \
+    snd_event_dlkm.ko \
     goodix_core.ko \
     hwid.ko \
     msm_drm.ko \
